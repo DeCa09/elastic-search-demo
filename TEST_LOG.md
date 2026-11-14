@@ -60,13 +60,23 @@ How the hybrid design got there, on the same 20 questions:
 5. **Agent instructions.** Shorter answers (150 words, six bullets) cut the response time from 66 to about 40 seconds. A rule to state memos and temporary rules first made the permission moment clear.
 6. **Agent retrieval.** The agent's built-in index search tool writes its own queries. It does not use the three-list query from `elastic/queries.py`. It found the right documents in every test, helped by the instruction to search in the question's language and in German.
 
+## Confirmed by you on your Mac and in Kibana (14 November)
+
+| # | Test | Result |
+|---|---|---|
+| C1 | `scripts/setup.sh security` and `scripts/preflight.sh` from your Mac, with the two users' own passwords | Pass, all nine checks |
+| C2 | Login to Kibana as `relationship_manager` | Failed at first with "Application not found": the role lacked the Elasticsearch home page. Fixed by adding `enterpriseSearch: read` to the role. Then pass |
+| C3 | Agent, French question A, as admin, after the instruction change | Pass. The interim rule from the confidential memo comes first, cited |
+| C4 | Agent, French question A, as `relationship_manager` | Pass. Same requirements from W-12 v3.0, no interim rule, no memo in the sources, no hint that a memo exists |
+
+One earlier run as admin showed the model holding the memo back by its own choice and saying so. The agent's instructions now state that access control is done by the system and that every returned document may be used.
+
 ## Not tested: do these first
 
 | # | Untested | Risk | Where |
 |---|---|---|---|
-| U1 | Logging in to Kibana as `relationship_manager` and `compliance_officer`, opening Dev Tools and the agent chat with the role's privileges | Medium. If the chat is missing, widen the role (`SETUP.md` step 4) | `SETUP.md` 4 |
-| U2 | The agent's answer when the relationship manager asks question B: it must not contain the memo | Medium. Search-level filtering is proven; the agent path rests on Elastic's documentation | `RUNBOOK.md` |
-| U3 | Running the scripts from your Mac with password logins for `--as` (I used impersonation) | Low. The same code ran with passwords on the local stack before a later refactor | `SETUP.md` 3 |
+| U1 | Logging in to Kibana as `compliance_officer`, and opening Dev Tools as either demo user | Low. The relationship manager login and agent chat work (see below) | `SETUP.md` 4 |
+| U2 | The agent's answer to question B (the German one) as each of the two users, side by side | Low. Question A is confirmed for both views (see below) | `RUNBOOK.md` |
 | U4 | The backup question's agent answer | Low | `RUNBOOK.md` |
 | U5 | How many agent answers the trial's LLM limit allows | Unknown. Four answers worked | `FALLBACK.md` |
 | U6 | Click names in the runbook | Low. Correct them in your first walk-through | `RUNBOOK.md` |

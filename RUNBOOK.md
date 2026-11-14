@@ -4,7 +4,7 @@
 
 **Story in one sentence:** a relationship manager in Geneva asks in French about a rule that exists only in a German directive; keyword search misses it, hybrid search finds it, the AI agent answers in French with citations, and a compliance officer asking the same thing gets one more source that the relationship manager must never see.
 
-**Tested or not.** The search queries, the permissions at search level, the version filter, the evaluation and the agent's answers were tested on your Elastic Cloud deployment on 14 November. Not tested: logging in to Kibana as the two demo users, and the agent's answer when the *relationship manager* asks (I could only call the agent with the admin key). Do `SETUP.md` step 4 first. Click names come from Kibana 9.5; correct them here after your first walk-through.
+**Tested or not.** The search queries, the permissions at search level, the version filter, the evaluation and the agent's answers were tested on your Elastic Cloud deployment on 14 November. You confirmed in Kibana on 14 November that the relationship manager's agent answer to question A leaves out the confidential memo, while the admin's answer leads with it. Not tested yet: question B side by side as the two demo users, and the `compliance_officer` login. The interface on your deployment is in German (Agenten, Entwicklertools, Mehr). Click names come from Kibana 9.5; correct them here after your first walk-through.
 
 ## People and pains
 
@@ -117,7 +117,7 @@ Nothing to reset. The demo changes no data. Start new conversations before the n
 |---|---|---|
 | Seconds for the agent's answer to question A | 36 | ____ |
 | Seconds for the agent's answer to question B | 47 | ____ |
-| Relationship manager's answer to question B leaves out the memo | not tested | ____ |
+| Relationship manager's answer leaves out the memo | confirmed for question A; question B not tested | ____ |
 | Full index rebuild (`scripts/reset.sh`) | 27 s for the index | ____ |
 
 ## German glossary

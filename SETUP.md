@@ -68,9 +68,9 @@ scripts/preflight.sh
 
 Green means the index, the embedding model, both users, the agent and the demo queries all work from your Mac.
 
-## 4. Log in as the two users ⚠️
+## 4. Log in as the two users
 
-I could not log in to Kibana as the demo users from my side, so this is the first thing to check.
+The `relationship_manager` login and its agent chat were confirmed on 14 November. Still to check: `compliance_officer`, and Dev Tools for both.
 
 1. Open a **second browser** (or a private window) and go to your Kibana URL.
 2. On the login page choose **Log in with Elasticsearch** (not the Elastic Cloud login). User `relationship_manager`, your password.

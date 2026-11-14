@@ -53,13 +53,15 @@ This kit is independent of the observability demo in `DeCa09/elastic-panel-demo`
 
 Small set, and the retrieval was tuned on it. It shows direction, not proof. Details in `TEST_LOG.md`.
 
+## Confirmed in Kibana on 14 November
+
+The same French question to the agent: as admin the answer leads with the confidential memo's interim rule; as `relationship_manager` the answer has no interim rule, no memo in the sources and no hint that one exists.
+
 ## Not tested
 
-- Logging in to Kibana as the two demo users, and the agent chat under their role.
-- The agent's answer when the relationship manager asks (it must leave out the memo).
-- How many agent answers the trial's LLM limit allows. Four worked.
-
-`SETUP.md` step 4 covers the first two. Do it first.
+- The German permission question (question B in the runbook) asked by both demo users side by side.
+- Logging in as `compliance_officer`, and Dev Tools under the demo role.
+- How many agent answers the trial's LLM limit allows. About seven have worked so far.
 
 ## Quick start on your Mac
 
