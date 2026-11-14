@@ -14,7 +14,7 @@ This kit is independent of the observability demo in `DeCa09/elastic-panel-demo`
 | `SETUP.md` | What exists on your deployment and the 30 minutes left for you |
 | `RUNBOOK.md` | The 12-minute demo, minute by minute, with talk track, German terms and the questions |
 | `FALLBACK.md` | What to do when something fails; how to record the backups |
-| `DECK.md` | 10-slide outline with speaker notes, timings and the value table |
+| `DECK.md` | 10-slide outline with speaker notes, timings and the value table. The built slides are a private Slides artifact: https://claude.ai/artifact/SLepmwH4jPwrqe2HEpfkW4 |
 | `QA_PREP.md` | Questions per panel role, alternatives, customer stories, land and expand |
 | `eval/RESULTS.md` | Keyword vs hybrid on 20 judged questions |
 | `diagrams/architecture.svg` | Architecture diagram for slide 4 |
