@@ -55,13 +55,13 @@ Small set, and the retrieval was tuned on it. It shows direction, not proof. Det
 
 ## Confirmed in Kibana on 14 November
 
-The same French question to the agent: as admin the answer leads with the confidential memo's interim rule; as `relationship_manager` the answer has no interim rule, no memo in the sources and no hint that one exists.
+Both demo users log in. The German permission question, asked by each in its own window: the relationship manager's answer opens with the three approvals and has no memo; the compliance officer's answer opens with the interim rule and cites the confidential memo. The French question gave the same split.
 
 ## Not tested
 
-- The German permission question (question B in the runbook) asked by both demo users side by side.
-- Logging in as `compliance_officer`, and Dev Tools under the demo role.
-- How many agent answers the trial's LLM limit allows. About seven have worked so far.
+- Dev Tools under the demo role (the Console queries were run through the API and the terminal, not in Kibana as a demo user).
+- The agent's shorter source list after the last instruction change.
+- How many agent answers the trial's LLM limit allows. About ten have worked so far.
 
 ## Quick start on your Mac
 

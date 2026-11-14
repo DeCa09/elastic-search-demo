@@ -68,6 +68,8 @@ How the hybrid design got there, on the same 20 questions:
 | C2 | Login to Kibana as `relationship_manager` | Failed at first with "Application not found": the role lacked the Elasticsearch home page. Fixed by adding `enterpriseSearch: read` to the role. Then pass |
 | C3 | Agent, French question A, as admin, after the instruction change | Pass. The interim rule from the confidential memo comes first, cited |
 | C4 | Agent, French question A, as `relationship_manager` | Pass. Same requirements from W-12 v3.0, no interim rule, no memo in the sources, no hint that a memo exists |
+| C5 | Login to Kibana as `compliance_officer` | Pass |
+| C6 | Agent, German question B, as `relationship_manager` and as `compliance_officer`, each in its own window | Pass. Remo's answer opens with the three approvals under W-12 v3.0 and has no memo. Clara's answer opens with the interim rule and cites the confidential memo |
 
 One earlier run as admin showed the model holding the memo back by its own choice and saying so. The agent's instructions now state that access control is done by the system and that every returned document may be used.
 
@@ -75,8 +77,8 @@ One earlier run as admin showed the model holding the memo back by its own choic
 
 | # | Untested | Risk | Where |
 |---|---|---|---|
-| U1 | Logging in to Kibana as `compliance_officer`, and opening Dev Tools as either demo user | Low. The relationship manager login and agent chat work (see below) | `SETUP.md` 4 |
-| U2 | The agent's answer to question B (the German one) as each of the two users, side by side | Low. Question A is confirmed for both views (see below) | `RUNBOOK.md` |
+| U1 | Opening Dev Tools as a demo user and running the Console queries there | Low. Both logins and the agent chat work (see below) | `SETUP.md` 4 |
+| U2 | The agent's source list after the last instruction change (list only cited sources) | Low. Check it in the next rehearsal | `RUNBOOK.md` |
 | U4 | The backup question's agent answer | Low | `RUNBOOK.md` |
 | U5 | How many agent answers the trial's LLM limit allows | Unknown. Four answers worked | `FALLBACK.md` |
 | U6 | Click names in the runbook | Low. Correct them in your first walk-through | `RUNBOOK.md` |
