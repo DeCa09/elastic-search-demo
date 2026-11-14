@@ -111,8 +111,9 @@ def main():
             "| Id | Lang | Kind | Keyword | Hybrid | Query |", "|---|---|---|---|---|---|"]
     for r in rows:
         out.append("| %s | %s | %s | %s | %s | %s |" % tuple(r))
-    out += ["", "This is a small, hand-judged set. It shows direction, not statistical proof. "
-            "Run it again after every change to analyzers, chunking or the embedding model."]
+    out += ["", "This is a small, hand-judged set, and the retrieval was tuned on it. It shows "
+            "direction, not statistical proof. Run it again after every change to analyzers, "
+            "chunking or the embedding model, and add fresh questions before you trust a gain."]
     text = "\n".join(out) + "\n"
     with open(os.path.join(HERE, "RESULTS.md"), "w", encoding="utf-8") as f:
         f.write(text)

@@ -14,7 +14,6 @@ Uses only the Python standard library. Reads settings from the environment
 (scripts/*.sh load .env first). Never prints secrets.
 """
 
-import base64
 import glob
 import json
 import os
@@ -23,13 +22,16 @@ import time
 import urllib.error
 import urllib.request
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import queries  # noqa: E402
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ES_URL = os.environ.get("ELASTICSEARCH_URL", "").rstrip("/")
 KIBANA_URL = os.environ.get("KIBANA_URL", "").rstrip("/")
 API_KEY = os.environ.get("ELASTIC_API_KEY", "")
 INDEX = os.environ.get("INDEX_NAME", "albisgrat-knowledge")
 PIPELINE = INDEX + "-ingest"
-INFERENCE_ID = os.environ.get("INFERENCE_ID", ".multilingual-e5-small-elasticsearch")
+INFERENCE_ID = os.environ.get("INFERENCE_ID", ".jina-embeddings-v5-text-small")
 ROLE = "albisgrat_knowledge_reader"
 USERS = {
     # username: (full name, groups, env var with the password)
@@ -56,13 +58,14 @@ DE_WORDS = [
 INSTRUCTIONS = """You are the compliance knowledge assistant of Privatbank Albisgrat AG, a fictional Swiss private bank.
 
 Rules:
-1. Always search the knowledge base with the tool before you answer. Search in the language of the question and, if the first results are weak, once more in German.
+1. Always search the knowledge base with the tool before you answer. Make two searches at the same time: one in the language of the question and one in German, because most internal directives are written in German. Do not search again unless both return nothing useful.
 2. Answer only from the documents the tool returns. If they do not contain the answer, say so. Never use your own knowledge of law or banking.
-3. Cite every statement. After each point, name the source in brackets: the document title, the article or section number, and for internal documents the document number and version. Example: [DSG Art. 9] or [W-12 v3.0, section 3].
-4. Prefer documents where is_current is true. If you use a document where is_current is false, say clearly that it is an outdated version.
-5. End with a list "Sources" that gives, for each source used: title, section, valid_from, and source_url if there is one.
-6. Answer in the language of the question. Keep the answer short: at most eight bullet points.
-7. You only see documents the current user may see. Never speculate about documents you cannot see."""
+3. Cite every statement. After each point, name the source in square brackets: for internal documents the document number, version and section, for law the article. Examples: [W-12 v3.0, section 4] or [Art. 9 DSG].
+4. Use only versions that are in force. If a document says it is superseded or no longer valid, do not use its rules; mention in one line that an outdated version exists.
+5. If a memo or temporary rule changes what a directive says, state that first and cite it.
+6. Be brief: at most six short bullet points and at most 150 words. Then a list "Sources" with one line per source: title, version or article, valid-from date.
+7. Answer in the language of the question.
+8. You only see documents the current user may see. Never speculate about documents you cannot see."""
 
 
 class ApiError(Exception):
@@ -72,9 +75,11 @@ class ApiError(Exception):
         self.body = body
 
 
-def http(base, method, path, body=None, ok_missing=False, auth=None, ndjson=False, timeout=600):
-    headers = {"Authorization": auth or ("ApiKey " + API_KEY),
+def http(base, method, path, body=None, ok_missing=False, run_as=None, ndjson=False, timeout=600):
+    headers = {"Authorization": "ApiKey " + API_KEY,
                "Content-Type": "application/x-ndjson" if ndjson else "application/json"}
+    if run_as:
+        headers.update(queries.auth_headers(run_as))
     if base == KIBANA_URL:
         headers["kbn-xsrf"] = "true"
     data = None
@@ -369,10 +374,6 @@ def create_agent():
 
 # ------------------------------------------------------------ status/delete
 
-def basic(user, password):
-    return "Basic " + base64.b64encode(("%s:%s" % (user, password)).encode()).decode()
-
-
 def status():
     problems = 0
 
@@ -397,13 +398,12 @@ def status():
 
     restricted = {"query": {"bool": {"must_not": {"term": {"allowed_groups": "all_staff"}}}}}
     for name, (_, groups, env) in USERS.items():
-        password = os.environ.get(env, "")
         try:
-            total = es("GET", "/%s/_count" % INDEX, auth=basic(name, password))["count"]
-            secret = es("POST", "/%s/_count" % INDEX, restricted, auth=basic(name, password))["count"]
+            total = es("GET", "/%s/_count" % INDEX, run_as=name)["count"]
+            secret = es("POST", "/%s/_count" % INDEX, restricted, run_as=name)["count"]
             want_secret = "compliance" in groups
             good = total > 0 and ((secret > 0) == want_secret)
-            line(good, "user %s can log in: sees %d documents, %d restricted" % (name, total, secret))
+            line(good, "user %s: sees %d documents, %d restricted" % (name, total, secret))
         except Exception as err:  # noqa: BLE001
             line(False, "user %s: %s" % (name, str(err)[:120]))
 

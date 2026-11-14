@@ -157,14 +157,14 @@ Keyword fails → Hybrid finds it → Answer with citations → Same question, t
 | | Today *(A)* | Target with Elastic | Why we believe it |
 |---|---|---|---|
 | Time per research question | About 40 minutes | About 10 minutes *(A)* | Demo. Docusign: "could take hours… now takes less than a minute" |
-| Cross-language questions answered in the top 5 | EVAL_KEYWORD_CROSS | EVAL_HYBRID_CROSS | Our test set of 20 judged questions (`eval/RESULTS.md`) |
+| Cross-language questions answered in the top 5 | 22% (measured) | 100% (measured) | Our test set of 20 judged questions (`eval/RESULTS.md`) |
 | Outdated policy versions in results | Possible | Filtered out | Demo: validity filter |
 | Places to search | 3 | 1 | One index |
 | Restricted content | Depends on where the file sits | Enforced per person, also for the AI | Demo: two users |
 
 Bottom line: "About 13,800 hours a year returned to compliance and front office *(A)*. Worth about CHF 750,000 a year at half adoption *(A)*. We measure it in the pilot."
 
-**Speaker notes:** "[To COO] The 'today' numbers are yours or our assumptions. The second row is not an assumption. I measured it on a small test set this week: 20 questions in four languages, judged by hand. It is small, and it shows direction, not proof. In the pilot we build that set with your compliance team from real questions. Time per question: Docusign reports going from hours to under a minute for agreement search. I plan with 40 minutes to 10 for you. That is 13,800 hours a year across 150 frequent users. I count half of it."
+**Speaker notes:** "[To COO] The 'today' numbers are yours or our assumptions. The second row is not an assumption. I measured it on a small test set this week: 20 questions in four languages, judged by hand. Nine of them ask in another language than the document. Keyword search answers two of those nine in the top five. Hybrid search answers all nine. It is a small set, and I tuned on it, so it shows direction, not proof. In the pilot we build that set with your compliance team from real questions. Time per question: Docusign reports going from hours to under a minute for agreement search. I plan with 40 minutes to 10 for you. That is 13,800 hours a year across 150 frequent users. I count half of it."
 
 The calculation (appendix, show only if asked):
 - Frequent users: 150 *(A)*. Questions per user per week: 4 *(A)*. Working weeks: 46.
@@ -211,7 +211,7 @@ The calculation (appendix, show only if asked):
 
 | Slide | Content |
 |---|---|
-| A1 Evaluation | The table from `eval/RESULTS.md`: keyword vs hybrid, by kind of question. How the set was judged. Why 20 questions is direction, not proof. |
+| A1 Evaluation | The table from `eval/RESULTS.md`: answer in the top 5 for 60% (keyword) against 100% (hybrid); cross-language 22% against 100%. How the set was judged. Why 20 questions, tuned on the same set, is direction and not proof. |
 | A2 Chunking and embeddings | One record per article or policy; `semantic_text` chunks of up to 250 words with one sentence overlap; which model and why; what I measured with the smaller model. |
 | A3 Multilingual handling | Language detection at ingest; one keyword field per language; decompounding for German; one multilingual vector space. |
 | A4 Security and residency | Document-level security from user groups; how groups sync from the directory; regions (Hosted: AWS Zurich); where embeddings and the LLM run. |

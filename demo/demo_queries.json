@@ -6,5 +6,6 @@
  "permission_question": "Welche Anforderungen gelten für die Auslagerung von Kundendaten an einen Cloud-Anbieter?",
  "version_question": "Dürfen Kundendaten in der EU gespeichert werden?",
  "backup_rag_question": "Wie lange müssen Kundenunterlagen nach Ende der Geschäftsbeziehung aufbewahrt werden?",
- "warmup_question": "Welche Weisung regelt Geschenke und Einladungen?"
+ "warmup_question": "Welche Weisung regelt Geschenke und Einladungen?",
+ "permission_rag_question": "Dürfen wir jetzt ein neues Projekt starten, das Kundendaten an einen Cloud-Anbieter auslagert? Welche Genehmigungen brauchen wir?"
 }

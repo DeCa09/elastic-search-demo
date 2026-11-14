@@ -40,7 +40,7 @@ Every document carries its validity dates and a flag for "in force". The search 
 No, and it should not. It finds the relevant articles and directives and summarises what they say, with citations. Interpretation and the decision stay with your team. I would put that sentence in the user guidance on day one.
 
 **What if a rule exists only in German and someone asks in Italian?**
-That is the case the design is built for. The semantic search works on meaning across languages, and the agent answers in the language of the question while citing the German source. I measured this on a test set. With a small embedding model it failed in most cases; with the stronger multilingual model it worked. So the model choice is tested, not assumed. See `eval/RESULTS.md` for the numbers.
+That is the case the design is built for. The semantic search works on meaning across languages, and the agent answers in the language of the question while citing the German source. I measured this on a test set. On nine cross-language questions, keyword search had the answer in the top five for two; the final hybrid design for all nine. The first embedding model I tried failed this test, so the model choice is measured, not assumed. The set is small and I tuned on it; in the pilot we use a larger one with your real questions.
 
 **Who maintains this? My team has no engineers.**
 Your team owns two things only: which documents are in scope, and the test questions with their correct answers. Platform engineering runs the ingestion. When a new directive is published it is indexed with its metadata, and the old version is marked as superseded.
@@ -87,16 +87,16 @@ Because stemming and stop words are language-specific, and a German decompounder
 Laws are split by article before indexing, because the article is the unit people cite. Inside a record, `semantic_text` chunks by sentence up to 250 words with one sentence overlap, which is the default. I tested 80-word chunks; it did not help. I would test section-level records for long policies next.
 
 **Which embedding model, and why?**
-I started with the built-in multilingual E5-small because it runs inside the deployment. On my judged set it did well within one language and badly across languages: a French question did not find the German directive. The stronger multilingual model on the Elastic Inference Service is the default for `semantic_text` on current Hosted versions. My conclusion: choose the model by measurement on your own questions, and keep the endpoint configurable.
+I started with the built-in multilingual E5-small because it runs inside the deployment. On my judged set it did well within one language and badly across languages: a French question did not find the German directive. Jina v5 on the Elastic Inference Service, the default for `semantic_text` on current Hosted versions, doubled the cross-language hit rate. It still ranked the German directive around tenth, behind law articles that exist in four languages. So I also changed the retrieval, not only the model. My conclusion: choose by measurement on your own questions, and keep the endpoint configurable.
 
 **Why RRF and not a weighted score?**
-BM25 scores and vector similarities are on different scales, and they shift with the corpus. RRF only uses ranks, so there is nothing to calibrate, which suits a pilot. Once we have a judged set of a few hundred questions, a linear combination or a reranker may do better, and we can measure that.
+BM25 scores and vector similarities are on different scales, and they shift with the corpus. RRF only uses ranks, so there is nothing to calibrate, which suits a pilot. I fuse three lists: keyword, semantic over everything, and semantic over internal documents only, so the bank's own directive is not buried under four language versions of the same law article. Once we have a judged set of a few hundred questions, a linear combination or a reranker may do better, and we can measure that.
 
 **Would you add a reranker?**
 Probably, as a second stage on the top 50. Elastic has a `text_similarity_reranker` retriever and multilingual rerankers on its inference service. It adds latency and cost per query, so I would add it only if the test set shows a gain.
 
 **How did you evaluate?**
-Twenty hand-judged questions in four languages, three kinds: same-language keywords, same-language questions, cross-language questions. Metrics: answer in the top 5, precision at 5, nDCG at 10, zero-result rate. It is small. It is enough to catch a wrong model choice, and it did.
+Twenty hand-judged questions in four languages, three kinds: same-language keywords, same-language questions, cross-language questions. Metrics: answer in the top 5, precision at 5, nDCG at 10, zero-result rate. Result: 60% against 100% in the top five, nDCG 0.36 against 0.76. It is small, and I tuned the retrieval on the same set, so the real gain will be smaller. It was enough to catch a wrong model choice.
 
 **How does this scale to millions of documents?**
 Vectors dominate memory. The levers are quantisation, which Elasticsearch supports for dense vectors, fewer dimensions, and filtering before the vector search. The keyword side scales as Elasticsearch always has. For a policy library this is far from any limit; for the whole bank's documents I would size it on a sample.
@@ -108,7 +108,7 @@ Elastic documents no limitation for `semantic_text` or retrievers. Two documente
 Agent Builder. Playground is deprecated since 9.4 and removed in 9.6. The agent in the demo is a custom agent with one index search tool and instructions that force grounding and citations. It is created through the Kibana API, so it is versioned like code.
 
 **What did not work?**
-Three things. E5-small failed across languages. FINMA circulars could not be used because FINMA's site terms require written consent for reproduction, so the dataset is federal law only. And the hyphenation decompounder needs a pattern file on every node, so I used the dictionary decompounder with a small domain word list.
+Four things. E5-small failed across languages. Even with a better model, parallel language versions of the law crowded out the internal directive until I gave internal documents their own result list. FINMA circulars could not be used because FINMA's site terms require written consent for reproduction, so the dataset is federal law only. And the hyphenation decompounder needs a pattern file on every node, so I used the dictionary decompounder with a small domain word list.
 
 ---
 
@@ -122,7 +122,7 @@ They are quick to start and convenient where your content already lives in their
 
 ## Why not just improve the intranet keyword search?
 
-You should, and this does: the keyword side here has proper analysis for German, French and Italian. But keyword search cannot answer a French question from a German document, and it cannot answer a question asked in everyday words. On my test set, keyword search and hybrid search tie on keyword queries and differ on questions.
+You should, and this does: the keyword side here has proper analysis for German, French and Italian. But keyword search cannot answer a French question from a German document, and it cannot answer a question asked in everyday words. On my test set, keyword search and hybrid search tie on keyword queries (4 of 4 each) and differ on questions, most of all across languages (2 of 9 against 9 of 9).
 
 ---
 

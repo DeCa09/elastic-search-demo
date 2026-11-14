@@ -30,6 +30,7 @@ Short form: `docs` = https://www.elastic.co/docs
 | `.multilingual-e5-small-elasticsearch` is a preconfigured endpoint "recommended for non-English language texts". It runs on ML nodes. | Page | docs/explore-analyze/elastic-inference/inference-api |
 | Elastic Inference Service (EIS) offers multilingual Jina embedding models (`jina-embeddings-v5-text-small`, `-nano`, `jina-embeddings-v3`), EU region available, data retention 0 days. | Page | docs/explore-analyze/elastic-inference/eis-supported-models |
 | E5-small ranks a German policy poorly for a French or Italian question in this corpus (cross-language success@5: 22%). | Tested | `TEST_LOG.md` |
+| With `.jina-embeddings-v5-text-small` and three fused result lists, cross-language success@5 is 100% on the 20-question set. | Tested on Cloud | `TEST_LOG.md` |
 
 ## Hybrid retrieval
 
@@ -62,7 +63,7 @@ Short form: `docs` = https://www.elastic.co/docs
 | Fact | Level | Source |
 |---|---|---|
 | "Playground was deprecated in Elastic Stack 9.4 and removed in 9.6. It is unavailable in Elastic Serverless. Use Agent Builder (generally available since 9.3) instead." | Page | docs/solutions/search/rag/playground |
-| Agent Builder: custom tools of type `index_search`, `esql`, `workflow`, `mcp`; custom agents with instructions and a tool list; APIs `POST /api/agent_builder/tools`, `/agents`, `/converse`. | Repo/Spec + Tested (create only) | Kibana OpenAPI specification |
+| Agent Builder: custom tools of type `index_search`, `esql`, `workflow`, `mcp`; custom agents with instructions and a tool list; APIs `POST /api/agent_builder/tools`, `/agents`, `/converse`, `/converse/async`. The default model on the trial deployment was `anthropic-claude-5-sonnet`. | Repo/Spec + Tested on Cloud | Kibana OpenAPI specification |
 | "Tools execute Elasticsearch requests with the privileges of the current user or API key." | Page | docs/explore-analyze/ai-features/agent-builder/permissions |
 | Kibana feature privilege for chat: `agentBuilder` (read). Elasticsearch cluster privilege `monitor_inference` for the managed LLM. | Page + Tested (role accepted) | same page |
 | "Agent Builder uses Elastic Managed LLMs running on the Elastic Inference Service (EIS)… requires zero setup." | Page | docs/explore-analyze/ai-features/agent-builder/models |

@@ -45,11 +45,22 @@ def keyword_body(question, size=5, current_only=False):
 
 
 def hybrid_body(question, size=5, current_only=False):
-    """Keyword and multilingual semantic search, combined with reciprocal rank fusion."""
+    """Keyword and multilingual semantic search, combined with reciprocal rank fusion (RRF).
+
+    Three result lists are fused:
+      1. keyword (BM25) over the per-language fields
+      2. semantic over everything
+      3. semantic over the bank's own documents only
+    The third list gives the bank's own rules a lane of their own. Without it, a law article
+    that exists in four languages fills the top of the list four times and pushes the one
+    internal directive down.
+    """
+    semantic = {"match": {"body_semantic": {"query": question}}}
     rrf = {
         "retrievers": [
             {"standard": {"query": lexical(question)}},
-            {"standard": {"query": {"match": {"body_semantic": {"query": question}}}}},
+            {"standard": {"query": semantic}},
+            {"standard": {"query": semantic, "filter": {"term": {"source": "internal"}}}},
         ],
         "rank_window_size": 50,
         "rank_constant": 60,
@@ -65,15 +76,27 @@ def hybrid_body(question, size=5, current_only=False):
     }
 
 
-def search(body, user=None):
-    if user:
+def auth_headers(user=None):
+    """Headers to call Elasticsearch as the admin API key or as one of the demo users.
+
+    Normally a demo user logs in with name and password. With RUN_AS_VIA_HEADER=1 the admin
+    API key impersonates the user instead (Elasticsearch "run as"). That is for environments
+    where a proxy owns the Authorization header.
+    """
+    headers = {"Content-Type": "application/json", "Authorization": "ApiKey " + API_KEY}
+    if user and os.environ.get("RUN_AS_VIA_HEADER") == "1":
+        headers["es-security-runas-user"] = user
+    elif user:
         password = os.environ.get(PASSWORDS[user], "")
-        auth = "Basic " + base64.b64encode(("%s:%s" % (user, password)).encode()).decode()
-    else:
-        auth = "ApiKey " + API_KEY
+        headers["Authorization"] = "Basic " + base64.b64encode(
+            ("%s:%s" % (user, password)).encode()).decode()
+    return headers
+
+
+def search(body, user=None):
     req = urllib.request.Request(
         "%s/%s/_search" % (ES_URL, INDEX), method="POST", data=json.dumps(body).encode(),
-        headers={"Authorization": auth, "Content-Type": "application/json"})
+        headers=auth_headers(user))
     try:
         with urllib.request.urlopen(req, timeout=120) as resp:
             return json.loads(resp.read().decode())
