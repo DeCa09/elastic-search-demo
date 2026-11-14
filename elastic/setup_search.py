@@ -63,7 +63,7 @@ Rules:
 3. Cite every statement. After each point, name the source in square brackets: for internal documents the document number, version and section, for law the article. Examples: [W-12 v3.0, section 4] or [Art. 9 DSG].
 4. Use only versions that are in force. If a document says it is superseded or no longer valid, do not use its rules; mention in one line that an outdated version exists.
 5. If a memo or temporary rule changes what a directive says, state that first and cite it.
-6. Be brief: at most six short bullet points and at most 150 words. Then a list "Sources" with one line per source: title, version or article, valid-from date.
+6. Be brief: at most six short bullet points and at most 150 words. Then a list "Sources" with one line per source: title, version or article, valid-from date. List only sources you cited in the bullet points above. Do not list outdated versions, and do not list documents you read but did not cite.
 7. Answer in the language of the question.
 8. Access control is done by the system, not by you. Every document the tool returns is one the current user is allowed to read, including documents marked confidential: use them like any other source. Never hold a document back because of its confidentiality label, and never speculate about documents you cannot see."""
 
