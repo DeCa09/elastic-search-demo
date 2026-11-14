@@ -1,0 +1,16 @@
+{
+  "id": "d-lavoro-remoto",
+  "title": "Direttiva D-30: Lavoro da remoto e sicurezza dei dispositivi",
+  "language": "it",
+  "doc_type": "policy",
+  "doc_number": "D-30",
+  "version": "1.0",
+  "department": "IT Security",
+  "valid_from": "2023-03-01",
+  "valid_to": null,
+  "is_current": true,
+  "supersedes": null,
+  "allowed_groups": ["all_staff"],
+  "source": "internal",
+  "body": "[Documento dimostrativo fittizio]\nBanca Privata Albisgrat SA – Direttiva D-30, versione 1.0, in vigore dal 1° marzo 2023\n\n1. Scopo\nLa presente direttiva fissa le condizioni alle quali i collaboratori possono lavorare fuori dai locali della banca e le regole di sicurezza per i dispositivi utilizzati.\n\n2. Campo d'applicazione\nSi applica a tutti i collaboratori delle sedi di Zurigo, Ginevra e Lugano, compreso il personale temporaneo.\n\n3. Principio\nIl lavoro da remoto è possibile fino a 2 giorni alla settimana, previo accordo scritto con il superiore diretto. Non costituisce un diritto e può essere revocato con un preavviso di 10 giorni.\n\n4. Luogo di lavoro\nIl lavoro da remoto è ammesso unicamente dal territorio svizzero. Il lavoro dall'estero, anche per un solo giorno e anche per i frontalieri dal proprio domicilio, richiede l'autorizzazione preventiva e scritta del superiore, delle risorse umane e del CISO. La richiesta va presentata almeno 15 giorni lavorativi prima. Durante le trasferte dei consulenti si applica inoltre la direttiva D-21.\n\n5. Dispositivi\nÈ consentito lavorare soltanto con il computer portatile e il telefono forniti dalla banca. Sui dispositivi privati non possono essere salvati, stampati, fotografati né inoltrati documenti della clientela. È vietato inviare documenti di lavoro al proprio indirizzo di posta elettronica privato.\n\n6. Collegamento\nL'accesso ai sistemi avviene esclusivamente tramite la VPN della banca con autenticazione a due fattori. Le reti senza fili pubbliche di alberghi, treni o locali non vanno utilizzate; in viaggio si usa la connessione del telefono aziendale.\n\n7. Blocco dello schermo e riservatezza\nLo schermo va bloccato a ogni allontanamento dalla postazione; il blocco automatico si attiva dopo 5 minuti di inattività. Le telefonate con i clienti si svolgono in un locale chiuso, senza altre persone presenti. In luoghi pubblici e sui mezzi di trasporto non si trattano dati di clienti.\n\n8. Documenti cartacei\nI documenti cartacei contenenti dati di clienti non lasciano i locali della banca. Le eccezioni sono autorizzate dal superiore e annotate nel registro delle uscite.\n\n9. Smarrimento o furto\nLo smarrimento o il furto di un dispositivo va annunciato immediatamente, al più tardi entro 2 ore, al servizio di assistenza informatica, che ne dispone la cancellazione a distanza. Si applica inoltre la procedura sulle violazioni della sicurezza dei dati.\n\n10. Controlli\nIl servizio IT Security verifica i collegamenti dall'estero mediante la geolocalizzazione degli accessi. Le violazioni sono segnalate al superiore e alle risorse umane e possono comportare la revoca del lavoro da remoto."
+}

@@ -1,0 +1,16 @@
+{
+  "id": "p-video-identifikation",
+  "title": "Prozess P-06: Video- und Online-Identifizierung",
+  "language": "de",
+  "doc_type": "procedure",
+  "doc_number": "P-06",
+  "version": "1.0",
+  "department": "Operations",
+  "valid_from": "2024-04-01",
+  "valid_to": null,
+  "is_current": true,
+  "supersedes": null,
+  "allowed_groups": ["all_staff"],
+  "source": "internal",
+  "body": "[Fiktives Demodokument]\nPrivatbank Albisgrat AG – Prozess P-06, Version 1.0, gültig ab 1. April 2024\n\n1. Zweck\nDieser Prozess beschreibt, wie ein Vertragspartner ohne persönliche Vorsprache per Videogespräch identifiziert wird. Die Videoidentifizierung ist der persönlichen Identifizierung nach Art. 3 GwG gleichgestellt, wenn die nachfolgenden Anforderungen erfüllt sind.\n\n2. Geltungsbereich\nDer Prozess gilt für die Kundenberater und für das Team Kontoeröffnung in Zürich, das die Videogespräche führt.\n\n3. Zulässigkeit\nDie Videoidentifizierung ist zulässig für natürliche Personen mit Wohnsitz in der Schweiz, in der EU oder im EWR, deren Beziehung als normales Risiko eingestuft wird und deren erwartete Vermögenswerte CHF 2 Millionen nicht übersteigen. Nicht zulässig ist sie für PEP, für Beziehungen mit erhöhtem Risiko, für Sitzgesellschaften und für Personen, deren Ausweis weder eine maschinenlesbare Zone noch optische Sicherheitsmerkmale aufweist.\n\n4. Vorbereitung\nDer Kunde erfasst seine Angaben vorgängig im Online-Formular. Das Videogespräch wird nur von geschulten Mitarbeitenden des Teams Kontoeröffnung geführt. Die Schulung ist jährlich zu wiederholen.\n\n5. Technische Prüfungen\nWährend des Gesprächs werden folgende Schritte ausgeführt:\n- Fotos der Vorder- und Rückseite des Ausweises sowie des Gesichts des Kunden;\n- Auslesen und Entschlüsseln der maschinenlesbaren Zone und Abgleich mit den erfassten Angaben;\n- Prüfung von mindestens 3 optischen Sicherheitsmerkmalen durch Kippen des Ausweises;\n- Bestätigung durch eine einmalige Transaktionsnummer, die dem Kunden per SMS zugestellt wird.\nBild und Ton müssen eine einwandfreie Prüfung erlauben.\n\n6. Aufzeichnung\nDas gesamte Gespräch wird mit Ton aufgezeichnet. Der Kunde erteilt dazu am Anfang des Gesprächs ausdrücklich seine Einwilligung. Aufzeichnung und Fotos werden im Kundendossier abgelegt und 10 Jahre nach Beendigung der Geschäftsbeziehung aufbewahrt.\n\n7. Abbruch\nDas Gespräch wird abgebrochen bei schlechter Bild- oder Tonqualität, bei Zweifeln an der Echtheit des Ausweises, bei Anzeichen, dass der Kunde von Dritten angeleitet wird, oder wenn die Angaben nicht übereinstimmen. Ein Abbruch wegen Verdachts wird Compliance am selben Tag gemeldet.\n\n8. Rückfall auf die persönliche Identifizierung\nNach einem Abbruch aus technischen Gründen ist ein zweiter Versuch erlaubt. Scheitert auch dieser oder bestehen Zweifel, erfolgt die Identifizierung durch persönliche Vorsprache an einem Standort der Bank oder auf dem Korrespondenzweg mit echtheitsbestätigter Ausweiskopie.\n\n9. Freigabe\nDas Konto wird erst nach Kontrolle der Aufzeichnung durch eine zweite Person des Teams freigegeben. Die Kontrolle erfolgt innert 3 Arbeitstagen."
+}

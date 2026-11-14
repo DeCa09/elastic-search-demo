@@ -1,0 +1,16 @@
+{
+  "id": "memo-untersuchung-cloud-vorfall",
+  "title": "Vertrauliches Memo: Interne Untersuchung Cloud-Vorfall (Projekt Enzian)",
+  "language": "de",
+  "doc_type": "memo",
+  "doc_number": "CM-2026-07",
+  "version": "1.0",
+  "department": "Compliance",
+  "valid_from": "2026-04-20",
+  "valid_to": null,
+  "is_current": true,
+  "supersedes": null,
+  "allowed_groups": ["compliance"],
+  "source": "internal",
+  "body": "[Fiktives Demodokument]\nSTRENG VERTRAULICH – nur für Mitarbeitende von Compliance\n\nDatum: 20. April 2026\nVon: Leiterin Compliance\nAn: Team Compliance; zur Kenntnis an den Vorsitzenden der Geschäftsleitung und den CISO\nBetreff: Interne Untersuchung Cloud-Vorfall (Projekt Enzian) – Zwischenergebnis und Übergangsregelung\n\n1. Ausgangslage\nIm März 2026 wurde festgestellt, dass eine Testumgebung bei einem externen Cloud-Anbieter (nachfolgend «Dienstleister A») während 9 Tagen unmaskierte Kundendaten von 312 Kundinnen und Kunden enthielt. Betroffen waren Namen, Adressen und Depotnummern, jedoch keine Zugangsdaten. Die Testumgebung gehörte zum Projekt Enzian.\n\n2. Feststellungen\nUrsache war ein übersprungener Maskierungsschritt beim Laden der Testdaten: Der automatische Maskierungslauf wurde wegen eines Terminengpasses manuell deaktiviert und danach nicht wieder eingeschaltet. Das Vier-Augen-Prinzip wurde nicht eingehalten. Die Auswertung der Zugriffsprotokolle ergab keine Hinweise auf einen Zugriff durch Dritte. Die Daten wurden am Tag der Entdeckung gelöscht; Dienstleister A hat die Löschung schriftlich bestätigt.\n\n3. Rechtliche Würdigung\nDie Prüfung nach Art. 24 DSG und Art. 47 BankG ist abgeschlossen. Legal und der Datenschutzberater beurteilen das Risiko für die betroffenen Personen als gering. Die Dokumentation liegt im Untersuchungsdossier.\n\n4. Massnahmen\nDer Maskierungsschritt lässt sich technisch nicht mehr deaktivieren. Testdatenlieferungen benötigen neu die Freigabe des CISO. Die beteiligten Projektmitarbeitenden werden bis 31. Mai 2026 nachgeschult. Die Interne Revision prüft die Umsetzung im dritten Quartal 2026.\n\n5. Übergangsregelung\nBis zum 31. Dezember 2026 gilt zusätzlich zur Weisung W-12: Jede neue Auslagerung von Kundendaten an einen Cloud-Anbieter bedarf der vorgängigen schriftlichen Genehmigung durch die Leiterin Compliance. Migrationen produktiver Kundendaten sind für alle Projekte sistiert, die noch nicht genehmigt sind. Bereits genehmigte Projekte laufen weiter, melden aber jeden Datentransfer 5 Arbeitstage im Voraus an Compliance.\n\n6. Vertraulichkeit\nDieses Memo ist streng vertraulich und ausschliesslich für Compliance bestimmt. Eine Weitergabe an andere Abteilungen, auch auszugsweise, ist ohne Zustimmung der Leiterin Compliance untersagt. Anfragen aus den Projekten sind an die Leiterin Compliance zu verweisen; die Projektleitungen werden separat und ohne Einzelheiten zum Vorfall über die Übergangsregelung informiert.\n\n7. Nächste Schritte\nDer Schlussbericht geht bis 30. Juni 2026 an den Prüfungsausschuss des Verwaltungsrats."
+}

@@ -1,0 +1,16 @@
+{
+  "id": "d-conseil-placement",
+  "title": "Directive D-12 : Conseil en placement et adéquation",
+  "language": "fr",
+  "doc_type": "policy",
+  "doc_number": "D-12",
+  "version": "2.0",
+  "department": "Front Office",
+  "valid_from": "2023-06-01",
+  "valid_to": null,
+  "is_current": true,
+  "supersedes": null,
+  "allowed_groups": ["all_staff"],
+  "source": "internal",
+  "body": "[Document de démonstration fictif]\nBanque Privée Albisgrat SA – Directive D-12, version 2.0, en vigueur dès le 1er juin 2023\n\n1. But\nLa présente directive fixe les règles de conduite à respecter lorsque la banque conseille un client en matière de placement ou gère sa fortune. Elle garantit que les recommandations correspondent à la situation et aux objectifs du client.\n\n2. Champ d'application\nElle s'applique à tous les conseillers à la clientèle et aux gérants de fortune. Elle ne s'applique pas aux ordres exécutés sans conseil, pour lesquels le client est informé que la banque ne vérifie ni le caractère approprié ni l'adéquation.\n\n3. Classification des clients\nChaque client est classé comme client privé, client professionnel ou client institutionnel avant la première prestation. Le client est informé par écrit de sa classification et de la possibilité d'en changer.\n\n4. Profil du client\nAvant tout conseil, le conseiller établit le profil d'investisseur au moyen du questionnaire interne. Celui-ci porte sur les connaissances et l'expérience, la situation financière, les objectifs de placement, l'horizon de placement et la capacité à supporter des pertes. Le profil est signé par le client et mis à jour au moins tous les 3 ans ou lors d'un changement important de sa situation.\n\n5. Vérification\nPour un conseil portant sur une transaction isolée, le conseiller vérifie que l'instrument est approprié au regard des connaissances et de l'expérience du client. Pour un conseil portant sur l'ensemble du portefeuille et pour la gestion de fortune, il vérifie en outre l'adéquation avec la situation financière et les objectifs. Si les informations reçues sont insuffisantes, le conseiller en avertit le client et renonce à toute recommandation.\n\n6. Information sur les risques\nLe client reçoit la brochure sur les risques liés aux instruments financiers avant la première transaction. Pour les produits structurés, les placements alternatifs et les dérivés, le conseiller remet la feuille d'information de base et explique oralement les risques particuliers. Les produits complexes ne sont pas recommandés aux clients dont le profil de risque est prudent.\n\n7. Documentation du conseil\nChaque entretien de conseil fait l'objet d'un procès-verbal saisi dans le système dans les 2 jours ouvrables. Il mentionne les besoins du client, la recommandation et ses motifs. Une copie est remise au client sur demande dans les 10 jours.\n\n8. Concentration\nUne position unique dépassant 10 % du portefeuille conseillé est signalée au client et consignée au procès-verbal.\n\n9. Rémunérations de tiers\nLe client est informé du type et de l'ampleur des rémunérations que la banque reçoit de tiers.\n\n10. Contrôle\nLe chef d'équipe contrôle chaque mois 5 procès-verbaux par conseiller. Compliance effectue un contrôle annuel."
+}

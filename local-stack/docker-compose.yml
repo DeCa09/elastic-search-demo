@@ -1,0 +1,59 @@
+# Local Elasticsearch and Kibana for rehearsing without Elastic Cloud (Plan B).
+# Local 30-day trial licence, so document-level security, semantic_text with a
+# local E5 model, RRF and Agent Builder are all enabled. No LLM is included.
+name: elastic-search-demo-local
+
+services:
+  elasticsearch:
+    image: elastic/elasticsearch:${ES_LOCAL_VERSION:-9.5.6}
+    container_name: es-search-local
+    environment:
+      - discovery.type=single-node
+      - ELASTIC_PASSWORD=${ES_LOCAL_PASSWORD}
+      - xpack.security.enabled=true
+      - xpack.security.http.ssl.enabled=false
+      - xpack.license.self_generated.type=trial
+      - cluster.routing.allocation.disk.threshold_enabled=false
+      - xpack.ml.use_auto_machine_memory_percent=true
+      - ES_JAVA_OPTS=-Xms2g -Xmx2g
+    ports:
+      - "127.0.0.1:9200:9200"
+    volumes:
+      - es-data:/usr/share/elasticsearch/data
+    healthcheck:
+      test: ["CMD-SHELL", "curl -s -u elastic:${ES_LOCAL_PASSWORD} http://localhost:9200 >/dev/null"]
+      interval: 5s
+      retries: 60
+
+  kibana-settings:
+    image: elastic/elasticsearch:${ES_LOCAL_VERSION:-9.5.6}
+    container_name: kibana-settings-search-local
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
+    restart: "no"
+    command: >
+      bash -c 'until curl -s -u "elastic:${ES_LOCAL_PASSWORD}"
+      -X POST http://elasticsearch:9200/_security/user/kibana_system/_password
+      -d "{\"password\":\"${KIBANA_LOCAL_PASSWORD}\"}"
+      -H "Content-Type: application/json" | grep -q "^{}"; do sleep 3; done'
+
+  kibana:
+    image: elastic/kibana:${ES_LOCAL_VERSION:-9.5.6}
+    container_name: kibana-search-local
+    depends_on:
+      kibana-settings:
+        condition: service_completed_successfully
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+      - ELASTICSEARCH_USERNAME=kibana_system
+      - ELASTICSEARCH_PASSWORD=${KIBANA_LOCAL_PASSWORD}
+      - XPACK_ENCRYPTEDSAVEDOBJECTS_ENCRYPTIONKEY=${KIBANA_ENCRYPTION_KEY}
+      - XPACK_SECURITY_ENCRYPTIONKEY=${KIBANA_ENCRYPTION_KEY}
+      - XPACK_REPORTING_ENCRYPTIONKEY=${KIBANA_ENCRYPTION_KEY}
+      - SERVER_PUBLICBASEURL=http://localhost:5601
+    ports:
+      - "127.0.0.1:5601:5601"
+
+volumes:
+  es-data:

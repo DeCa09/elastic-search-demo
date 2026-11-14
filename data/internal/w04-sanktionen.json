@@ -1,0 +1,16 @@
+{
+  "id": "w04-sanktionen",
+  "title": "Weisung W-04: Sanktionen und Embargos",
+  "language": "de",
+  "doc_type": "policy",
+  "doc_number": "W-04",
+  "version": "2.0",
+  "department": "Compliance",
+  "valid_from": "2023-01-01",
+  "valid_to": null,
+  "is_current": true,
+  "supersedes": null,
+  "allowed_groups": ["all_staff"],
+  "source": "internal",
+  "body": "[Fiktives Demodokument]\nPrivatbank Albisgrat AG – Weisung W-04, Version 2.0, gültig ab 1. Januar 2023\n\n1. Zweck\nDiese Weisung stellt sicher, dass die Bank die vom Bund erlassenen Sanktionen und Embargos einhält und keine Geschäfte mit sanktionierten Personen, Unternehmen oder Organisationen tätigt.\n\n2. Geltungsbereich\nDie Weisung gilt für alle Mitarbeitenden, insbesondere für Kundenberater, den Zahlungsverkehr, den Handel und Compliance.\n\n3. Massgebende Listen\nVerbindlich sind die Sanktionslisten des Staatssekretariats für Wirtschaft (SECO). Zusätzlich gleicht die Bank aus Risikoüberlegungen die Listen der Vereinten Nationen, der Europäischen Union und weiterer wichtiger Finanzplätze ab. Compliance spielt Änderungen der Listen innert 24 Stunden nach Veröffentlichung in das Prüfsystem ein.\n\n4. Prüfung bei der Kontoeröffnung\nVor Aufnahme einer Geschäftsbeziehung werden Vertragspartner, wirtschaftlich Berechtigte, Kontrollinhaber, Bevollmächtigte und Zeichnungsberechtigte gegen die Listen geprüft. Ohne dokumentiertes Prüfergebnis wird kein Konto eröffnet.\n\n5. Laufende Prüfung\nDer gesamte Kundenbestand wird täglich automatisch gegen die aktuellen Listen abgeglichen. Ein- und ausgehende Zahlungen sowie Wertschriftentransfers werden vor der Ausführung in Echtzeit geprüft, einschliesslich Auftraggeber, Begünstigtem und beteiligten Banken.\n\n6. Behandlung von Treffern\nMeldet das System einen möglichen Treffer, wird die Transaktion angehalten. Compliance klärt den Treffer innert 1 Arbeitstag ab. Erweist er sich als falsch, gibt Compliance die Transaktion frei und dokumentiert die Begründung. Kundenberater dürfen Treffer nicht selbst freigeben.\n\n7. Sperrung\nBestätigt sich der Treffer, sperrt Compliance sofort sämtliche Konten und Depots der betroffenen Person. Auszahlungen, Überweisungen, Schliessungen und die Herausgabe von Schrankfachinhalten sind untersagt. Der Kundenberater erteilt dem Kunden keine Auskunft, bevor Compliance und Legal das Vorgehen festgelegt haben.\n\n8. Meldung an das SECO\nDer Leiter Compliance meldet gesperrte Vermögenswerte unverzüglich, spätestens innert 2 Arbeitstagen, dem SECO. Die Geschäftsleitung wird gleichzeitig informiert. Ausnahmebewilligungen, etwa für Lebenshaltungskosten, beantragt ausschliesslich Legal.\n\n9. Umgehungsverbot\nEs ist untersagt, Kunden bei der Umgehung von Sanktionen zu unterstützen, etwa durch die Übertragung von Vermögenswerten auf Angehörige oder durch das Weglassen von Angaben in Zahlungsaufträgen. Verdachtsfälle sind Compliance am selben Tag zu melden.\n\n10. Schulung und Dokumentation\nAlle betroffenen Mitarbeitenden absolvieren jährlich eine Schulung. Prüfergebnisse, Abklärungen und Meldungen werden 10 Jahre aufbewahrt."
+}

@@ -1,0 +1,16 @@
+{
+  "id": "p-reclamations-clients",
+  "title": "Procédure P-14 : Traitement des réclamations de clients",
+  "language": "fr",
+  "doc_type": "procedure",
+  "doc_number": "P-14",
+  "version": "1.0",
+  "department": "Operations",
+  "valid_from": "2022-05-01",
+  "valid_to": null,
+  "is_current": true,
+  "supersedes": null,
+  "allowed_groups": ["all_staff"],
+  "source": "internal",
+  "body": "[Document de démonstration fictif]\nBanque Privée Albisgrat SA – Procédure P-14, version 1.0, en vigueur dès le 1er mai 2022\n\n1. But\nLa présente procédure garantit que chaque réclamation d'un client est enregistrée, traitée dans les délais et utilisée pour améliorer les services de la banque.\n\n2. Champ d'application\nElle s'applique à tous les collaborateurs en contact avec la clientèle ainsi qu'au service Qualité, rattaché au département Operations.\n\n3. Définition\nEst une réclamation toute expression d'insatisfaction d'un client ou de son représentant concernant un service, un produit, des frais ou le comportement d'un collaborateur, quel que soit le canal utilisé : lettre, courriel, téléphone ou entretien. Une simple demande de renseignement n'est pas une réclamation.\n\n4. Enregistrement\nLe collaborateur qui reçoit la réclamation l'inscrit le jour même au registre des réclamations, avec la date, le nom du client, l'objet et le montant en jeu. Les réclamations orales sont résumées par écrit.\n\n5. Accusé de réception\nLe conseiller à la clientèle envoie au client un accusé de réception dans les 2 jours ouvrables. Celui-ci indique la personne chargée du dossier et le délai de réponse prévu.\n\n6. Traitement et réponse\nLe service Qualité examine les faits, recueille la prise de position du conseiller et rédige la réponse. Celle-ci est envoyée dans les 15 jours ouvrables suivant la réception. Si ce délai ne peut être tenu, le client reçoit une réponse intermédiaire motivée ; le délai total ne dépasse pas 30 jours ouvrables.\n\n7. Compétences\nLes gestes commerciaux et dédommagements sont accordés selon les compétences suivantes : jusqu'à CHF 1'000 par le chef d'équipe, jusqu'à CHF 10'000 par le chef de région, au-delà par un membre de la Direction générale. Le conseiller mis en cause ne décide jamais seul.\n\n8. Escalade\nSont transmises sans délai au service Legal et à Compliance les réclamations qui portent sur un montant supérieur à CHF 50'000, qui évoquent une action en justice, qui mettent en cause l'intégrité d'un collaborateur ou qui concernent une possible violation du secret bancaire. Si le client reste insatisfait, la réponse l'informe de la possibilité de s'adresser à l'organe de médiation compétent.\n\n9. Registre et conservation\nLe registre est tenu par le service Qualité. Les dossiers sont conservés 10 ans après leur clôture.\n\n10. Rapport\nLe service Qualité remet chaque trimestre à la Direction générale un rapport indiquant le nombre de réclamations, leurs causes, les délais de traitement et les mesures d'amélioration proposées."
+}

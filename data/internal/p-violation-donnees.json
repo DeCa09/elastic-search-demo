@@ -1,0 +1,16 @@
+{
+  "id": "p-violation-donnees",
+  "title": "Procédure P-11 : Violation de la sécurité des données",
+  "language": "fr",
+  "doc_type": "procedure",
+  "doc_number": "P-11",
+  "version": "1.0",
+  "department": "IT Security",
+  "valid_from": "2023-09-01",
+  "valid_to": null,
+  "is_current": true,
+  "supersedes": null,
+  "allowed_groups": ["all_staff"],
+  "source": "internal",
+  "body": "[Document de démonstration fictif]\nBanque Privée Albisgrat SA – Procédure P-11, version 1.0, en vigueur dès le 1er septembre 2023\n\n1. But\nLa présente procédure définit la manière dont une violation de la sécurité des données est annoncée, évaluée et traitée, afin de limiter le dommage et de respecter l'art. 24 LPD.\n\n2. Champ d'application\nElle s'applique à tous les collaborateurs ainsi qu'au personnel temporaire des sites de Zurich, Genève et Lugano.\n\n3. Définition\nIl y a violation de la sécurité des données lorsque des données personnelles sont perdues, effacées, détruites, modifiées, divulguées ou rendues accessibles à des personnes non autorisées, de manière accidentelle ou illicite. Exemples : courriel envoyé au mauvais destinataire, ordinateur portable volé, relevé remis au mauvais client, accès informatique abusif.\n\n4. Annonce interne\nTout collaborateur qui constate ou soupçonne une violation l'annonce immédiatement, au plus tard dans les 24 heures, au CISO et au conseiller à la protection des données, au moyen du formulaire d'incident disponible sur l'intranet. En dehors des heures de bureau, il appelle le service de piquet informatique. Il n'efface aucune trace et ne contacte pas lui-même les personnes concernées.\n\n5. Mesures immédiates\nLe CISO ordonne les mesures de confinement : blocage des accès, rappel du message, effacement à distance de l'appareil. Ces mesures sont consignées avec la date et l'heure.\n\n6. Évaluation\nDans les 48 heures qui suivent l'annonce, le conseiller à la protection des données évalue avec le CISO le risque pour la personnalité et les droits fondamentaux des personnes concernées. L'évaluation tient compte de la nature des données, du nombre de personnes touchées et de la probabilité d'un usage abusif. Si des données de clients sont touchées, le responsable Legal examine en outre la question du secret bancaire.\n\n7. Annonce au PFPDT\nSi la violation entraîne vraisemblablement un risque élevé, le conseiller à la protection des données l'annonce au PFPDT dans les meilleurs délais, en règle générale dans les 72 heures (art. 24 LPD). L'annonce est validée au préalable par un membre de la Direction générale.\n\n8. Information des clients\nLes personnes concernées sont informées lorsque leur protection l'exige ou que le PFPDT le demande. Le courrier est signé par le conseiller à la clientèle et par le conseiller à la protection des données. Il indique la nature de la violation, ses conséquences et les mesures prises.\n\n9. Documentation\nChaque violation, annoncée ou non à l'autorité, est inscrite au registre des incidents et conservée au moins 2 ans après l'annonce.\n\n10. Suivi\nLe CISO présente chaque trimestre à la Direction générale un rapport sur les incidents et les mesures correctives."
+}

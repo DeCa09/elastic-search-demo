@@ -1,0 +1,194 @@
+{
+ "note": "Hand-judged. 'law:<SR number>:<article>' means that article in any language. 'cross-language' means the best internal answer is written in another language than the question.",
+ "queries": [
+  {
+   "id": "q01",
+   "language": "fr",
+   "kind": "cross-language question",
+   "query": "Qui doit donner son accord avant de confier des données de clients à un prestataire informatique externe ?",
+   "relevant": [
+    "w12-auslagerung-cloud-v3"
+   ]
+  },
+  {
+   "id": "q02",
+   "language": "it",
+   "kind": "cross-language question",
+   "query": "Chi deve approvare il trasferimento dei dati dei clienti a un fornitore esterno?",
+   "relevant": [
+    "w12-auslagerung-cloud-v3"
+   ]
+  },
+  {
+   "id": "q03",
+   "language": "en",
+   "kind": "cross-language question",
+   "query": "Who must approve outsourcing of client data to an external provider?",
+   "relevant": [
+    "w12-auslagerung-cloud-v3"
+   ]
+  },
+  {
+   "id": "q04",
+   "language": "de",
+   "kind": "same-language keywords",
+   "query": "Auslagerung Kundendaten Genehmigung",
+   "relevant": [
+    "w12-auslagerung-cloud-v3"
+   ]
+  },
+  {
+   "id": "q05",
+   "language": "de",
+   "kind": "same-language question",
+   "query": "Wie lange müssen Kundenunterlagen nach Ende der Geschäftsbeziehung aufbewahrt werden?",
+   "relevant": [
+    "w18-aufbewahrung-v2",
+    "law:955.0:art_7"
+   ]
+  },
+  {
+   "id": "q06",
+   "language": "fr",
+   "kind": "cross-language question",
+   "query": "Combien de temps faut-il conserver les documents des clients après la fin de la relation ?",
+   "relevant": [
+    "w18-aufbewahrung-v2",
+    "law:955.0:art_7"
+   ]
+  },
+  {
+   "id": "q07",
+   "language": "fr",
+   "kind": "same-language keywords",
+   "query": "annonce violation sécurité des données PFPDT",
+   "relevant": [
+    "p-violation-donnees",
+    "law:235.1:art_24"
+   ]
+  },
+  {
+   "id": "q08",
+   "language": "de",
+   "kind": "cross-language question",
+   "query": "Innert welcher Frist muss eine Verletzung der Datensicherheit intern gemeldet werden?",
+   "relevant": [
+    "p-violation-donnees",
+    "law:235.1:art_24"
+   ]
+  },
+  {
+   "id": "q09",
+   "language": "it",
+   "kind": "same-language question",
+   "query": "Quando devo comunicare un sospetto di riciclaggio di denaro all'Ufficio di comunicazione?",
+   "relevant": [
+    "p-monitoraggio-transazioni",
+    "law:955.0:art_9"
+   ]
+  },
+  {
+   "id": "q10",
+   "language": "de",
+   "kind": "same-language question",
+   "query": "Wann muss ein Verdacht auf Geldwäscherei der Meldestelle gemeldet werden?",
+   "relevant": [
+    "law:955.0:art_9",
+    "p-monitoraggio-transazioni"
+   ]
+  },
+  {
+   "id": "q11",
+   "language": "fr",
+   "kind": "same-language question",
+   "query": "Quelle est la valeur maximale d'un cadeau que je peux accepter d'un client ?",
+   "relevant": [
+    "d-cadeaux-invitations"
+   ]
+  },
+  {
+   "id": "q12",
+   "language": "de",
+   "kind": "cross-language question",
+   "query": "Bis zu welchem Betrag darf ich Geschenke von Kunden annehmen?",
+   "relevant": [
+    "d-cadeaux-invitations"
+   ]
+  },
+  {
+   "id": "q13",
+   "language": "it",
+   "kind": "same-language question",
+   "query": "Posso lavorare da remoto dall'estero?",
+   "relevant": [
+    "d-lavoro-remoto"
+   ]
+  },
+  {
+   "id": "q14",
+   "language": "fr",
+   "kind": "cross-language question",
+   "query": "Puis-je travailler à distance depuis l'étranger ?",
+   "relevant": [
+    "d-lavoro-remoto"
+   ]
+  },
+  {
+   "id": "q15",
+   "language": "de",
+   "kind": "same-language keywords",
+   "query": "PEP Genehmigung Geschäftsleitung",
+   "relevant": [
+    "w07-pep-geschaeftsbeziehungen"
+   ]
+  },
+  {
+   "id": "q16",
+   "language": "it",
+   "kind": "cross-language question",
+   "query": "Chi approva una relazione d'affari con una persona politicamente esposta?",
+   "relevant": [
+    "w07-pep-geschaeftsbeziehungen",
+    "p-kyc-ouverture-compte-v2"
+   ]
+  },
+  {
+   "id": "q17",
+   "language": "fr",
+   "kind": "same-language question",
+   "query": "Dans quel délai faut-il répondre à une réclamation d'un client ?",
+   "relevant": [
+    "p-reclamations-clients"
+   ]
+  },
+  {
+   "id": "q18",
+   "language": "en",
+   "kind": "cross-language question",
+   "query": "How do we handle a data subject access request?",
+   "relevant": [
+    "w15-auskunftsbegehren",
+    "law:235.1:art_25"
+   ]
+  },
+  {
+   "id": "q19",
+   "language": "de",
+   "kind": "same-language question",
+   "query": "Unter welchen Voraussetzungen dürfen Personendaten ins Ausland bekanntgegeben werden?",
+   "relevant": [
+    "law:235.1:art_16",
+    "law:235.1:art_17"
+   ]
+  },
+  {
+   "id": "q20",
+   "language": "fr",
+   "kind": "same-language keywords",
+   "query": "violation du secret bancaire peine",
+   "relevant": [
+    "law:952.0:art_47"
+   ]
+  }
+ ]
+}

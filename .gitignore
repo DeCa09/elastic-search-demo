@@ -1,0 +1,10 @@
+.env
+**/.env
+!.env.example
+local-stack/demo.env
+recordings/
+*.mov
+*.mp4
+.DS_Store
+__pycache__/
+.venv/

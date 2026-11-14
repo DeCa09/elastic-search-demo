@@ -1,0 +1,16 @@
+{
+  "id": "memo-verdachtsfall-2026-014",
+  "title": "Memo confidenziale: Caso di sospetto 2026-014 (Lugano)",
+  "language": "it",
+  "doc_type": "memo",
+  "doc_number": "CM-2026-11",
+  "version": "1.0",
+  "department": "Compliance",
+  "valid_from": "2026-05-12",
+  "valid_to": null,
+  "is_current": true,
+  "supersedes": null,
+  "allowed_groups": ["compliance"],
+  "source": "internal",
+  "body": "[Documento dimostrativo fittizio]\nSTRETTAMENTE CONFIDENZIALE – riservato al servizio Compliance\n\nData: 12 maggio 2026\nDa: Responsabile Compliance, sede di Lugano\nA: Servizio antiriciclaggio; per conoscenza al membro della Direzione generale responsabile del rischio\nOggetto: Caso 2026-014 – versamenti in contanti inusuali e decisione di comunicazione\n\n1. Fatti\nTra il 2 febbraio e il 24 aprile 2026 su una relazione gestita a Lugano sono stati effettuati 14 versamenti in contanti per un totale di CHF 386'000. I singoli importi, compresi tra CHF 22'000 e CHF 31'000, sono rimasti sistematicamente poco sotto la soglia interna di allerta. Il profilo del cliente, aperto nel 2019, indicava entrate annue da attività dipendente di circa CHF 140'000 e nessuna attività in contanti.\n\n2. Chiarimenti effettuati\nIn applicazione dell'art. 6 LRD il consulente alla clientela ha chiesto spiegazioni il 28 aprile 2026. Il cliente ha indicato la vendita di oggetti d'arte a privati, senza presentare contratti, ricevute o altri giustificativi entro il termine di 10 giorni fissato. Le ricerche in fonti pubbliche non hanno confermato l'attività dichiarata. Due versamenti sono stati eseguiti da una terza persona senza procura.\n\n3. Valutazione\nLa provenienza dei fondi non è plausibile e il frazionamento degli importi costituisce un indizio di riciclaggio secondo gli allegati della ORD-FINMA. Il sospetto non ha potuto essere dissipato. Sussiste quindi un sospetto fondato.\n\n4. Decisione\nL'11 maggio 2026 il Responsabile Compliance, sentito il servizio giuridico, ha deciso di effettuare la comunicazione a MROS ai sensi dell'art. 9 LRD. La comunicazione è stata trasmessa oggi tramite il portale elettronico dell'autorità. La Direzione generale è stata informata.\n\n5. Divieto d'informazione\nSecondo l'art. 10a LRD è vietato informare il cliente o terzi della comunicazione. Il consulente alla clientela è stato istruito per iscritto: nessun accenno ai chiarimenti in corso, nessuna modifica del tono abituale nei contatti, ogni richiesta del cliente va segnalata a Compliance lo stesso giorno.\n\n6. Prossimi passi\nLa relazione resta sotto sorveglianza rafforzata. Gli ordini del cliente sono eseguiti solo in modo che la traccia documentale sia mantenuta; prelievi in contanti superiori a CHF 10'000 richiedono il consenso preventivo di Compliance. In caso di decisione di blocco delle autorità si applica la procedura P-09. Il dossier è conservato per 10 anni. Riesame della situazione: 12 giugno 2026.\n\n7. Riservatezza\nIl presente memo non può essere trasmesso fuori dal servizio Compliance né menzionato nel sistema di gestione della clientela."
+}

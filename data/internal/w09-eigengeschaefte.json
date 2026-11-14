@@ -1,0 +1,16 @@
+{
+  "id": "w09-eigengeschaefte",
+  "title": "Weisung W-09: Eigengeschäfte der Mitarbeitenden",
+  "language": "de",
+  "doc_type": "policy",
+  "doc_number": "W-09",
+  "version": "2.0",
+  "department": "Compliance",
+  "valid_from": "2022-10-01",
+  "valid_to": null,
+  "is_current": true,
+  "supersedes": null,
+  "allowed_groups": ["all_staff"],
+  "source": "internal",
+  "body": "[Fiktives Demodokument]\nPrivatbank Albisgrat AG – Weisung W-09, Version 2.0, gültig ab 1. Oktober 2022\n\n1. Zweck\nDiese Weisung regelt Geschäfte, die Mitarbeitende auf eigene Rechnung in Finanzinstrumenten tätigen. Sie verhindert den Missbrauch vertraulicher Informationen und die Benachteiligung von Kunden.\n\n2. Geltungsbereich\nDie Weisung gilt für alle Mitarbeitenden, die Mitglieder der Geschäftsleitung und des Verwaltungsrats. Erfasst sind auch Geschäfte über Konten von Ehegatten, Lebenspartnern und minderjährigen Kindern sowie über Konten, für die eine Vollmacht besteht.\n\n3. Kontoführung\nMitarbeitende führen ihre Wertschriftendepots grundsätzlich bei der Bank. Depots bei anderen Instituten sind Compliance innert 14 Tagen nach Eröffnung zu melden; die Mitarbeitenden reichen jährlich bis 31. Januar einen Depotauszug ein.\n\n4. Verbotene Geschäfte\nUntersagt sind:\n- Geschäfte unter Ausnützung von Insiderinformationen oder in Kenntnis hängiger Kundenaufträge (Vorlaufen, Mitlaufen, Nachlaufen);\n- Geschäfte in Titeln, die auf der Sperrliste (Restricted List) stehen;\n- Leerverkäufe und Geschäfte, die das verfügbare Guthaben übersteigen;\n- Gegengeschäfte mit Kunden.\n\n5. Vorgängige Genehmigung\nGeschäfte in Aktien, Anleihen und Derivaten einzelner Emittenten bedürfen der vorgängigen Genehmigung (Pre-Clearance) durch Compliance über das elektronische Formular. Die Genehmigung gilt am Tag der Erteilung und am folgenden Handelstag; danach ist ein neuer Antrag nötig. Nicht genehmigungspflichtig sind breit gestreute Anlagefonds, börsengehandelte Indexfonds, Kassenobligationen und Devisengeschäfte bis CHF 50'000.\n\n6. Haltefrist\nGenehmigungspflichtige Titel sind mindestens 30 Kalendertage zu halten. Ausnahmen bewilligt Compliance bei Kursverlusten von mehr als 20 Prozent oder in persönlichen Härtefällen.\n\n7. Beobachtungsliste und Sperrliste\nCompliance führt eine vertrauliche Beobachtungsliste (Watch List) mit Emittenten, zu denen die Bank über nicht öffentliche Informationen verfügt. Anträge zu diesen Titeln werden ohne Angabe von Gründen abgelehnt. Die Sperrliste ist im Intranet einsehbar und wird bei jeder Änderung am selben Tag aktualisiert.\n\n8. Besondere Funktionen\nMitarbeitende des Handels, der Anlageberatung und des Research dürfen in Titeln, die sie beruflich betreuen, während 5 Handelstagen vor und nach einer Empfehlung der Bank keine Eigengeschäfte tätigen.\n\n9. Überwachung\nCompliance gleicht die Eigengeschäfte monatlich mit den Kundenaufträgen und der Beobachtungsliste ab. Auffälligkeiten sind von den Mitarbeitenden innert 5 Arbeitstagen zu erklären.\n\n10. Sanktionen\nVerstösse können die Rückabwicklung des Geschäfts, die Abschöpfung des Gewinns und arbeitsrechtliche Massnahmen zur Folge haben."
+}

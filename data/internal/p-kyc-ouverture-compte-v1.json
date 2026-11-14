@@ -1,0 +1,16 @@
+{
+  "id": "p-kyc-ouverture-compte-v1",
+  "title": "Procédure P-03 : Ouverture de compte et identification du client (KYC)",
+  "language": "fr",
+  "doc_type": "procedure",
+  "doc_number": "P-03",
+  "version": "1.0",
+  "department": "Compliance",
+  "valid_from": "2020-06-01",
+  "valid_to": "2024-12-31",
+  "is_current": false,
+  "supersedes": null,
+  "allowed_groups": ["all_staff"],
+  "source": "internal",
+  "body": "[Document de démonstration fictif]\nBanque Privée Albisgrat SA – Procédure P-03, version 1.0, en vigueur du 1er juin 2020 au 31 décembre 2024\n\n1. But\nLa présente procédure fixe la marche à suivre lors de l'ouverture d'un compte, conformément aux obligations de diligence des art. 3 à 6 LBA.\n\n2. Champ d'application\nElle s'applique aux conseillers à la clientèle et au service Ouvertures de compte des trois sites de la banque.\n\n3. Vérification de l'identité du cocontractant\nLe conseiller vérifie l'identité du cocontractant au moyen d'une pièce d'identité officielle munie d'une photographie (art. 3 LBA). Une copie est versée au dossier. Pour une personne morale, un extrait du registre du commerce est demandé ; aucune limite d'ancienneté n'est fixée pour ce document.\n\n4. Ayant droit économique\nL'ayant droit économique est déterminé à l'aide du formulaire interne signé par le cocontractant (art. 4 LBA).\n\n5. Profil du client et catégories de risque\nLe conseiller établit un profil sommaire du client : profession, origine des avoirs, montant prévu. Les relations sont classées en deux catégories, risque normal et risque élevé. Les personnes politiquement exposées (PEP) et les avoirs supérieurs à CHF 10 millions sont considérés comme à risque élevé.\n\n6. Clarifications complémentaires\nPour les relations à risque élevé, le conseiller rédige une note sur l'origine de la fortune (art. 6 LBA). Des pièces justificatives sont demandées si le conseiller l'estime nécessaire.\n\n7. Approbation\nToutes les relations, y compris celles à risque élevé, sont approuvées par le chef d'équipe du conseiller. Compliance reçoit une copie du dossier pour information dans les 30 jours qui suivent l'ouverture. Une approbation par la Direction n'est pas requise.\n\n8. Revue périodique\nLes relations à risque élevé sont revues tous les 5 ans. Les autres relations sont revues uniquement en cas d'événement particulier, par exemple un changement de domicile ou une transaction inhabituelle.\n\n9. Documentation\nLe dossier d'ouverture doit être complet dans un délai de 90 jours. Les documents sont conservés 10 ans après la fin de la relation.\n\n10. Entrée en vigueur\nLa présente procédure entre en vigueur le 1er juin 2020.\n\nRemarque : cette version n'est plus en vigueur depuis le 31 décembre 2024. Elle a été remplacée par la version 2.0 et n'est conservée qu'à des fins d'archivage. Elle ne doit plus être utilisée pour l'ouverture de nouvelles relations."
+}

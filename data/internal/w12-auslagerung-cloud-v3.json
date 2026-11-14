@@ -1,0 +1,16 @@
+{
+  "id": "w12-auslagerung-cloud-v3",
+  "title": "Weisung W-12: Auslagerung und Cloud-Nutzung",
+  "language": "de",
+  "doc_type": "policy",
+  "doc_number": "W-12",
+  "version": "3.0",
+  "department": "Compliance",
+  "valid_from": "2025-07-01",
+  "valid_to": null,
+  "is_current": true,
+  "supersedes": "w12-auslagerung-cloud-v2",
+  "allowed_groups": ["all_staff"],
+  "source": "internal",
+  "body": "[Fiktives Demodokument]\nPrivatbank Albisgrat AG – Weisung W-12, Version 3.0, gültig ab 1. Juli 2025\n\n1. Zweck\nDiese Weisung legt fest, unter welchen Voraussetzungen die Bank Funktionen und Daten an externe Dienstleister oder Cloud-Anbieter übertragen darf. Sie schützt das Bankkundengeheimnis und stellt sicher, dass Kundendaten jederzeit unter der Kontrolle der Bank bleiben.\n\n2. Geltungsbereich\nDie Weisung gilt für alle Mitarbeitenden und Organisationseinheiten in Zürich, Genf und Lugano sowie für sämtliche Projekte, in denen Kundendaten (Client Identifying Data, CID) durch einen externen Dienstleister gespeichert oder bearbeitet werden.\n\n3. Risikoanalyse\nJede Auslagerung von Kundendaten an einen externen Dienstleister oder Cloud-Anbieter setzt eine dokumentierte Risikoanalyse voraus. Verantwortlich für die Erstellung ist der fachliche Eigner (Business Owner) der betroffenen Anwendung. Die Analyse beurteilt mindestens Vertraulichkeit, Verfügbarkeit, Abhängigkeit vom Dienstleister und Rechtsrisiken.\n\n4. Genehmigung\nVor der Vertragsunterzeichnung ist die schriftliche Genehmigung von drei Stellen einzuholen: der Geschäftsleitung, des CISO und von Compliance. Solange nicht alle drei Freigaben vorliegen, darf weder ein Vertrag unterzeichnet noch dürfen Daten übertragen werden.\n\n5. Datenstandort\nKundenidentifizierende Daten dürfen ausschliesslich in der Schweiz gespeichert und bearbeitet werden. Eine Speicherung in der EU oder im EWR ist nur mit vorgängiger Genehmigung des Verwaltungsrats zulässig. Andere Länder sind ausgeschlossen; dies gilt auch für Sicherungskopien und Supportzugriffe.\n\n6. Verschlüsselung\nKundendaten sind bei der Speicherung und bei der Übertragung zu verschlüsseln. Die Schlüssel werden ausschliesslich von der Bank verwaltet. Der Dienstleister darf zu keinem Zeitpunkt Zugriff auf unverschlüsselte kundenidentifizierende Daten haben.\n\n7. Vertragsinhalt\nDer Vertrag muss zwingend enthalten: Prüf- und Einsichtsrechte für die Bank, ihre Prüfgesellschaft und die FINMA; die Pflicht, den Beizug von Unterakkordanten vorgängig durch die Bank genehmigen zu lassen; einen Ausstiegsplan (Exit-Plan) mit Rückgabe und Löschung der Daten.\n\n8. Inventar und Überprüfung\nJede genehmigte Auslagerung ist innert 10 Arbeitstagen nach Vertragsunterzeichnung im zentralen Auslagerungsinventar zu erfassen. Der Business Owner überprüft die Auslagerung jährlich und meldet das Ergebnis an Compliance.\n\n9. Rechtsgrundlagen\nArt. 9 DSG (Bearbeitung durch Auftragsbearbeiter), Art. 16 DSG (Bekanntgabe ins Ausland), Art. 8 DSG (Datensicherheit), Art. 47 BankG (Bankkundengeheimnis) sowie FINMA-Rundschreiben 2018/3 «Outsourcing».\n\n10. Inkrafttreten\nDiese Weisung tritt am 1. Juli 2025 in Kraft und ersetzt die Version 2.0 vom 1. März 2021. Verstösse werden dem Leiter Compliance gemeldet und können arbeitsrechtliche Folgen haben."
+}

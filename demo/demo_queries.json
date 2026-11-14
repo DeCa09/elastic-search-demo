@@ -1,0 +1,10 @@
+{
+ "cross_language_question": "Qui doit donner son accord avant de confier des données de clients à un prestataire informatique externe ?",
+ "cross_language_target_title": "Weisung W-12",
+ "rag_question_en": "Which requirements apply when we outsource client data to a cloud provider?",
+ "rag_question_fr": "Quelles exigences s'appliquent lorsque nous confions des données de clients à un fournisseur cloud ?",
+ "permission_question": "Welche Anforderungen gelten für die Auslagerung von Kundendaten an einen Cloud-Anbieter?",
+ "version_question": "Dürfen Kundendaten in der EU gespeichert werden?",
+ "backup_rag_question": "Wie lange müssen Kundenunterlagen nach Ende der Geschäftsbeziehung aufbewahrt werden?",
+ "warmup_question": "Welche Weisung regelt Geschenke und Einladungen?"
+}

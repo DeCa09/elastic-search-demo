@@ -1,0 +1,16 @@
+{
+  "id": "w12-auslagerung-cloud-v2",
+  "title": "Weisung W-12: Auslagerung und Cloud-Nutzung",
+  "language": "de",
+  "doc_type": "policy",
+  "doc_number": "W-12",
+  "version": "2.0",
+  "department": "Compliance",
+  "valid_from": "2021-03-01",
+  "valid_to": "2025-06-30",
+  "is_current": false,
+  "supersedes": null,
+  "allowed_groups": ["all_staff"],
+  "source": "internal",
+  "body": "[Fiktives Demodokument]\nPrivatbank Albisgrat AG – Weisung W-12, Version 2.0, gültig vom 1. März 2021 bis 30. Juni 2025\n\n1. Zweck\nDiese Weisung regelt die Übertragung von Funktionen und Daten an externe Dienstleister und Cloud-Anbieter. Sie soll einen einheitlichen und wirtschaftlichen Umgang mit solchen Vorhaben sicherstellen.\n\n2. Geltungsbereich\nDie Weisung gilt für alle Mitarbeitenden und Organisationseinheiten in Zürich, Genf und Lugano, die Informatikleistungen oder die Bearbeitung von Kundendaten bei einem externen Dienstleister beziehen.\n\n3. Risikobeurteilung\nVor einer Auslagerung von Kundendaten nimmt die Projektleitung eine kurze Risikobeurteilung vor. Eine formlose Notiz im Projektdossier genügt. Bei Vorhaben mit einem jährlichen Vertragsvolumen unter CHF 50'000 kann auf die Beurteilung verzichtet werden.\n\n4. Genehmigung\nDie Genehmigung einer Auslagerung erteilt der Leiter IT. Seine Unterschrift auf dem Projektantrag genügt. Weitere Stellen müssen nicht beigezogen werden; der Leiter IT informiert die Geschäftsleitung einmal jährlich im Rahmen des IT-Berichts über die bestehenden Verträge.\n\n5. Datenstandort\nKundendaten dürfen in der Schweiz oder in der EU beziehungsweise im EWR gespeichert und bearbeitet werden. Für Standorte in der EU oder im EWR ist keine zusätzliche Genehmigung erforderlich. Standorte ausserhalb dieser Gebiete sind nicht zulässig.\n\n6. Verschlüsselung\nDie Verschlüsselung der Daten bei der Speicherung und bei der Übertragung wird empfohlen. Die Schlüsselverwaltung kann dem Dienstleister überlassen werden, sofern dieser ein anerkanntes Sicherheitszertifikat vorweist.\n\n7. Vertragsinhalt\nDer Vertrag soll eine Vertraulichkeitsklausel, Angaben zur Verfügbarkeit der Dienstleistung und eine Kündigungsfrist von höchstens 12 Monaten enthalten. Prüfrechte der Bank sind nach Möglichkeit zu vereinbaren.\n\n8. Inventar\nDer Leiter IT führt eine Liste der Auslagerungen. Neue Verträge sind innert 30 Tagen nach Unterzeichnung einzutragen. Eine Überprüfung der Einträge erfolgt bei Vertragsverlängerung.\n\n9. Rechtsgrundlagen\nBundesgesetz über den Datenschutz in der damals geltenden Fassung, Art. 47 BankG (Bankkundengeheimnis) sowie FINMA-Rundschreiben 2018/3 «Outsourcing».\n\n10. Inkrafttreten\nDiese Weisung tritt am 1. März 2021 in Kraft.\n\nHinweis: Diese Version ist seit dem 30. Juni 2025 ausser Kraft und wurde durch die Version 3.0 ersetzt. Sie wird nur zu Dokumentationszwecken aufbewahrt und darf nicht mehr als Grundlage für neue Vorhaben verwendet werden."
+}

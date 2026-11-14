@@ -1,0 +1,16 @@
+{
+  "id": "d-interessenkonflikte",
+  "title": "Weisung W-10: Interessenkonflikte",
+  "language": "de",
+  "doc_type": "policy",
+  "doc_number": "W-10",
+  "version": "1.0",
+  "department": "Compliance",
+  "valid_from": "2022-07-01",
+  "valid_to": null,
+  "is_current": true,
+  "supersedes": null,
+  "allowed_groups": ["all_staff"],
+  "source": "internal",
+  "body": "[Fiktives Demodokument]\nPrivatbank Albisgrat AG – Weisung W-10, Version 1.0, gültig ab 1. Juli 2022\n\n1. Zweck\nDiese Weisung legt fest, wie die Bank Interessenkonflikte erkennt, vermeidet und, wo sie sich nicht vermeiden lassen, offenlegt. Die Interessen der Kunden gehen den Interessen der Bank und der Mitarbeitenden vor.\n\n2. Geltungsbereich\nDie Weisung gilt für alle Mitarbeitenden sowie für die Mitglieder der Geschäftsleitung und des Verwaltungsrats.\n\n3. Begriff\nEin Interessenkonflikt liegt vor, wenn die Bank oder eine für sie tätige Person ein eigenes Interesse hat, das den Interessen eines Kunden zuwiderläuft, oder wenn die Interessen mehrerer Kunden einander entgegenstehen. Typische Fälle: Empfehlung bankeigener Produkte, Vergütungen von Dritten, Nebentätigkeiten, persönliche Beziehungen zu Kunden oder Lieferanten, Eigengeschäfte.\n\n4. Erkennung und Meldung\nJede Person meldet einen möglichen Interessenkonflikt innert 5 Arbeitstagen nach dessen Erkennen ihrem Vorgesetzten und Compliance. Bis zum Entscheid tritt sie in der betroffenen Angelegenheit in den Ausstand.\n\n5. Register\nCompliance führt ein Register der Interessenkonflikte. Es enthält die Art des Konflikts, die betroffenen Personen und Bereiche, die getroffenen Massnahmen und das Datum der letzten Überprüfung. Das Register wird jährlich überprüft und der Geschäftsleitung vorgelegt.\n\n6. Organisatorische Massnahmen\nDie Bank trennt Bereiche mit gegenläufigen Interessen durch Informationsbarrieren (Chinese Walls): Vermögensverwaltung, Handel, Kreditgeschäft und Research sind räumlich, personell und in den Zugriffsrechten getrennt. Der Austausch vertraulicher Informationen über eine Barriere hinweg ist nur mit vorgängiger Zustimmung von Compliance zulässig und wird protokolliert. Die Vergütung der Kundenberater darf nicht vom Absatz einzelner Produkte abhängen.\n\n7. Nebentätigkeiten und Mandate\nNebentätigkeiten, Verwaltungsratsmandate und öffentliche Ämter bedürfen der vorgängigen Genehmigung durch den Vorgesetzten und Compliance. Beteiligungen von mehr als 5 Prozent an einem Unternehmen sind zu melden. Bewilligte Mandate werden jährlich bis 31. Januar bestätigt.\n\n8. Persönliche Beziehungen\nMitarbeitende betreuen keine Geschäftsbeziehungen von Verwandten oder Lebenspartnern und nehmen von Kunden keine Vollmachten oder Erbeinsetzungen an. Ausnahmen bewilligt die Geschäftsleitung.\n\n9. Offenlegung\nLässt sich eine Benachteiligung von Kunden durch organisatorische Massnahmen nicht ausschliessen, wird der Konflikt dem Kunden vor dem Geschäftsabschluss in verständlicher Form schriftlich offengelegt. Die Offenlegung ersetzt die Pflicht zur Vermeidung nicht.\n\n10. Verstösse\nNicht gemeldete Interessenkonflikte werden als schwere Pflichtverletzung behandelt und können arbeitsrechtliche Folgen haben."
+}

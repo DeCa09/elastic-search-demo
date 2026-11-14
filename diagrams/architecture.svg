@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="Inter, Helvetica, Arial, sans-serif" role="img" aria-label="Target architecture: documents from public law and internal sources are ingested into one Elasticsearch index with keyword and semantic fields and document-level security, searched with hybrid retrieval, and answered by an AI agent with citations">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#343741"/>
+    </marker>
+    <style>
+      .title { font-size: 26px; font-weight: 700; fill: #1a1c21; }
+      .sub { font-size: 15px; fill: #516381; }
+      .zone { fill: #f6f9fc; stroke: #cad3e2; stroke-width: 1.5; rx: 14; }
+      .zoneTitle { font-size: 14px; font-weight: 700; fill: #516381; letter-spacing: .5px; }
+      .box { fill: #ffffff; stroke: #343741; stroke-width: 1.5; rx: 10; }
+      .dashed { fill: #ffffff; stroke: #8a94a6; stroke-width: 1.5; stroke-dasharray: 6 5; rx: 10; }
+      .elastic { fill: #e6f1fa; stroke: #0b64dd; stroke-width: 2; rx: 12; }
+      .feat { fill: #ffffff; stroke: #0b64dd; stroke-width: 1.3; rx: 8; }
+      .h { font-size: 15px; font-weight: 700; fill: #1a1c21; }
+      .t { font-size: 12.5px; fill: #343741; }
+      .edge { stroke: #343741; stroke-width: 2; fill: none; marker-end: url(#arrow); }
+      .pain { fill: #fff3f0; stroke: #c61e25; stroke-width: 1.3; rx: 8; }
+      .painT { font-size: 12.5px; fill: #8a0f14; }
+      .fixT { font-size: 12.5px; fill: #09724d; font-weight: 600; }
+      .num { font-size: 13px; font-weight: 700; fill: #ffffff; }
+    </style>
+  </defs>
+  <rect width="1280" height="720" fill="#ffffff"/>
+  <text x="40" y="48" class="title">Privatbank Albisgrat: one permission-aware knowledge search in four languages</text>
+  <text x="40" y="74" class="sub">Target architecture. Everything inside the blue box is Elastic: no separate vector database, no separate permission layer.</text>
+
+  <!-- Sources -->
+  <rect x="30" y="100" width="230" height="420" class="zone"/>
+  <text x="46" y="126" class="zoneTitle">SOURCES</text>
+  <rect x="46" y="142" width="198" height="84" class="box"/>
+  <text x="58" y="166" class="h">Swiss federal law</text>
+  <text x="58" y="186" class="t">Fedlex: DE, FR, IT, EN</text>
+  <text x="58" y="204" class="t">one record per article</text>
+  <rect x="46" y="240" width="198" height="84" class="box"/>
+  <text x="58" y="264" class="h">Internal documents</text>
+  <text x="58" y="284" class="t">policies, procedures, memos</text>
+  <text x="58" y="302" class="t">versions, access groups</text>
+  <rect x="46" y="338" width="198" height="84" class="dashed"/>
+  <text x="58" y="362" class="h">Later: connectors</text>
+  <text x="58" y="382" class="t">SharePoint, intranet, file</text>
+  <text x="58" y="400" class="t">shares, with their permissions</text>
+  <rect x="46" y="436" width="198" height="66" class="dashed"/>
+  <text x="58" y="460" class="h">Later: directory</text>
+  <text x="58" y="480" class="t">groups from Active Directory</text>
+
+  <!-- Elastic -->
+  <rect x="300" y="100" width="700" height="420" class="elastic"/>
+  <text x="318" y="126" class="zoneTitle" fill="#0b64dd">ELASTICSEARCH ON ELASTIC CLOUD (region of your choice)</text>
+
+  <rect x="318" y="142" width="200" height="360" class="feat"/>
+  <text x="330" y="166" class="h">Ingest pipeline</text>
+  <text x="330" y="190" class="t">1. Detect the language</text>
+  <text x="330" y="208" class="t">   (built-in model)</text>
+  <text x="330" y="234" class="t">2. Route the text to the</text>
+  <text x="330" y="252" class="t">   analyzer for that language</text>
+  <text x="330" y="278" class="t">3. Split into chunks and</text>
+  <text x="330" y="296" class="t">   embed them with a</text>
+  <text x="330" y="314" class="t">   multilingual model</text>
+  <text x="330" y="332" class="t">   (semantic_text)</text>
+  <text x="330" y="364" class="t">Metadata kept per record:</text>
+  <text x="330" y="382" class="t">language, version, validity,</text>
+  <text x="330" y="400" class="t">access groups, source link</text>
+
+  <rect x="540" y="142" width="210" height="360" class="feat"/>
+  <text x="552" y="166" class="h">One index</text>
+  <text x="552" y="190" class="t">Keyword fields per language:</text>
+  <text x="552" y="208" class="t">German compounds split,</text>
+  <text x="552" y="226" class="t">French and Italian elisions,</text>
+  <text x="552" y="244" class="t">accents folded</text>
+  <text x="552" y="274" class="t">Semantic field: vectors for</text>
+  <text x="552" y="292" class="t">meaning across languages</text>
+  <text x="552" y="322" class="h">Document-level security</text>
+  <text x="552" y="342" class="t">Each user only ever gets</text>
+  <text x="552" y="360" class="t">documents of their groups.</text>
+  <text x="552" y="378" class="t">Enforced in the engine, for</text>
+  <text x="552" y="396" class="t">search and for the AI agent</text>
+
+  <rect x="772" y="142" width="210" height="170" class="feat"/>
+  <text x="784" y="166" class="h">Hybrid retrieval</text>
+  <text x="784" y="190" class="t">Keyword (BM25) and semantic</text>
+  <text x="784" y="208" class="t">results, merged with</text>
+  <text x="784" y="226" class="t">reciprocal rank fusion (RRF)</text>
+  <text x="784" y="252" class="t">Filter: only versions in force</text>
+
+  <rect x="772" y="332" width="210" height="170" class="feat"/>
+  <text x="784" y="356" class="h">AI agent (Agent Builder)</text>
+  <text x="784" y="380" class="t">Searches with the user's</text>
+  <text x="784" y="398" class="t">own rights, answers only</text>
+  <text x="784" y="416" class="t">from what it found, cites</text>
+  <text x="784" y="434" class="t">document and section</text>
+  <text x="784" y="460" class="t">LLM: Elastic managed, or</text>
+  <text x="784" y="478" class="t">your own model</text>
+
+  <path d="M260 184 L316 184" class="edge"/>
+  <path d="M260 282 L316 282" class="edge"/>
+  <path d="M518 320 L538 320" class="edge"/>
+  <path d="M750 226 L770 226" class="edge"/>
+  <path d="M877 312 L877 330" class="edge"/>
+
+  <!-- Users -->
+  <rect x="1040" y="100" width="210" height="420" class="zone"/>
+  <text x="1056" y="126" class="zoneTitle">USERS</text>
+  <rect x="1056" y="142" width="178" height="100" class="box"/>
+  <text x="1068" y="166" class="h">Compliance officer</text>
+  <text x="1068" y="186" class="t">sees everything, including</text>
+  <text x="1068" y="204" class="t">restricted memos</text>
+  <rect x="1056" y="262" width="178" height="100" class="box"/>
+  <text x="1068" y="286" class="h">Relationship manager</text>
+  <text x="1068" y="306" class="t">same question, answer</text>
+  <text x="1068" y="324" class="t">without restricted sources</text>
+  <rect x="1056" y="382" width="178" height="120" class="box"/>
+  <text x="1068" y="406" class="h">All three offices</text>
+  <text x="1068" y="426" class="t">ask in German, French,</text>
+  <text x="1068" y="444" class="t">Italian or English, in</text>
+  <text x="1068" y="462" class="t">Kibana or, later, in the</text>
+  <text x="1068" y="480" class="t">intranet through the API</text>
+  <path d="M982 416 L1054 320" class="edge"/>
+  <path d="M982 400 L1054 200" class="edge"/>
+
+  <g>
+    <circle cx="518" cy="142" r="13" fill="#0b64dd"/><text x="518" y="147" text-anchor="middle" class="num">1</text>
+    <circle cx="982" cy="142" r="13" fill="#0b64dd"/><text x="982" y="147" text-anchor="middle" class="num">2</text>
+    <circle cx="982" cy="332" r="13" fill="#0b64dd"/><text x="982" y="337" text-anchor="middle" class="num">3</text>
+    <circle cx="750" cy="312" r="13" fill="#0b64dd"/><text x="750" y="317" text-anchor="middle" class="num">4</text>
+  </g>
+
+  <g>
+    <rect x="30" y="544" width="296" height="150" class="pain"/>
+    <circle cx="54" cy="568" r="13" fill="#0b64dd"/><text x="54" y="573" text-anchor="middle" class="num">1</text>
+    <text x="76" y="573" class="h">Scattered, one language</text>
+    <text x="46" y="602" class="painT">❌ SharePoint, intranet, PDF folders;</text>
+    <text x="46" y="620" class="painT">    search only finds your own language</text>
+    <text x="46" y="650" class="fixT">✅ One index, language detected and</text>
+    <text x="46" y="668" class="fixT">    analysed per document</text>
+
+    <rect x="338" y="544" width="296" height="150" class="pain"/>
+    <circle cx="362" cy="568" r="13" fill="#0b64dd"/><text x="362" y="573" text-anchor="middle" class="num">2</text>
+    <text x="384" y="573" class="h">Hours per question</text>
+    <text x="354" y="602" class="painT">❌ Staff must know the exact words</text>
+    <text x="354" y="620" class="painT">    and where to look</text>
+    <text x="354" y="650" class="fixT">✅ Hybrid search finds the rule by</text>
+    <text x="354" y="668" class="fixT">    meaning, across languages</text>
+
+    <rect x="646" y="544" width="296" height="150" class="pain"/>
+    <circle cx="670" cy="568" r="13" fill="#0b64dd"/><text x="670" y="573" text-anchor="middle" class="num">3</text>
+    <text x="692" y="573" class="h">Outdated versions, no proof</text>
+    <text x="662" y="602" class="painT">❌ Old policies circulate; answers</text>
+    <text x="662" y="620" class="painT">    cannot be traced to a source</text>
+    <text x="662" y="650" class="fixT">✅ Answers cite document and section;</text>
+    <text x="662" y="668" class="fixT">    only versions in force are used</text>
+
+    <rect x="954" y="544" width="296" height="150" class="pain"/>
+    <circle cx="978" cy="568" r="13" fill="#0b64dd"/><text x="978" y="573" text-anchor="middle" class="num">4</text>
+    <text x="1000" y="573" class="h">Confidential content</text>
+    <text x="970" y="602" class="painT">❌ An AI assistant must never leak</text>
+    <text x="970" y="620" class="painT">    a restricted memo</text>
+    <text x="970" y="650" class="fixT">✅ Document-level security in the</text>
+    <text x="970" y="668" class="fixT">    engine, also for the AI agent</text>
+  </g>
+</svg>

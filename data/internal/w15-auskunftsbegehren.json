@@ -1,0 +1,16 @@
+{
+  "id": "w15-auskunftsbegehren",
+  "title": "Weisung W-15: Auskunftsbegehren betroffener Personen",
+  "language": "de",
+  "doc_type": "policy",
+  "doc_number": "W-15",
+  "version": "1.0",
+  "department": "Legal",
+  "valid_from": "2023-09-01",
+  "valid_to": null,
+  "is_current": true,
+  "supersedes": null,
+  "allowed_groups": ["all_staff"],
+  "source": "internal",
+  "body": "[Fiktives Demodokument]\nPrivatbank Albisgrat AG – Weisung W-15, Version 1.0, gültig ab 1. September 2023\n\n1. Zweck\nDiese Weisung regelt, wie die Bank Begehren von Personen behandelt, die Auskunft über die zu ihrer Person bearbeiteten Daten verlangen (Art. 25 DSG).\n\n2. Geltungsbereich\nSie gilt für alle Mitarbeitenden. Auskunftsberechtigt sind Kunden, ehemalige Kunden, Bevollmächtigte, Stellenbewerber, Mitarbeitende und weitere Personen, deren Daten die Bank bearbeitet.\n\n3. Eingang und Weiterleitung\nEin Begehren kann schriftlich, per E-Mail oder mündlich am Schalter eingehen. Wer ein Begehren entgegennimmt, leitet es am selben Arbeitstag, spätestens am folgenden, an den Datenschutzberater weiter. Mitarbeitende erteilen selbst keine Auskunft, auch nicht teilweise.\n\n4. Identitätsprüfung\nVor jeder Auskunft wird die Identität der gesuchstellenden Person geprüft. Bei Kunden genügt der Abgleich der Unterschrift mit dem Kundendossier oder die Anfrage über das E-Banking. In allen anderen Fällen ist die Kopie eines amtlichen Ausweises erforderlich. Vertreter legen eine Vollmacht vor, die nicht älter als 12 Monate ist.\n\n5. Frist\nDie Auskunft wird innert 30 Tagen seit Eingang des Begehrens erteilt. Kann die Frist nicht eingehalten werden, teilt der Datenschutzberater der Person vor Ablauf mit, bis wann die Auskunft erfolgt. Der Datenschutzberater führt eine Fristenkontrolle und mahnt die Fachbereiche nach 15 Tagen.\n\n6. Inhalt der Auskunft\nMitgeteilt werden die bearbeiteten Personendaten als solche, der Bearbeitungszweck, die Aufbewahrungsdauer, die Herkunft der Daten sowie die Empfänger oder Empfängerkategorien. Die Fachbereiche liefern die Daten innert 10 Arbeitstagen an den Datenschutzberater.\n\n7. Einschränkungen\nDie Auskunft kann nach Art. 26 DSG verweigert, eingeschränkt oder aufgeschoben werden, namentlich wenn ein Gesetz dies vorsieht oder überwiegende Interessen Dritter entgegenstehen. Über Meldungen nach dem Geldwäschereigesetz wird keine Auskunft erteilt. Jede Einschränkung entscheidet der Leiter Legal und begründet sie gegenüber der Person.\n\n8. Antwort\nDie Antwort wird vom Datenschutzberater verfasst und gemeinsam mit dem Leiter Legal unterzeichnet. Sie erfolgt schriftlich per eingeschriebener Post oder über den gesicherten Kanal des E-Bankings, nie per unverschlüsselter E-Mail.\n\n9. Kosten\nDie Auskunft ist kostenlos. Bei unverhältnismässigem Aufwand kann eine Beteiligung von höchstens CHF 300 verlangt werden; die Person wird vorgängig informiert.\n\n10. Dokumentation\nBegehren und Antworten werden im Register des Datenschutzberaters erfasst und 5 Jahre aufbewahrt."
+}

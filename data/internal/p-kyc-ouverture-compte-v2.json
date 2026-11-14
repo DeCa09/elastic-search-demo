@@ -1,0 +1,16 @@
+{
+  "id": "p-kyc-ouverture-compte-v2",
+  "title": "Procédure P-03 : Ouverture de compte et identification du client (KYC)",
+  "language": "fr",
+  "doc_type": "procedure",
+  "doc_number": "P-03",
+  "version": "2.0",
+  "department": "Compliance",
+  "valid_from": "2025-01-01",
+  "valid_to": null,
+  "is_current": true,
+  "supersedes": "p-kyc-ouverture-compte-v1",
+  "allowed_groups": ["all_staff"],
+  "source": "internal",
+  "body": "[Document de démonstration fictif]\nBanque Privée Albisgrat SA – Procédure P-03, version 2.0, en vigueur dès le 1er janvier 2025\n\n1. But\nLa présente procédure décrit les étapes à suivre lors de l'ouverture d'une relation d'affaires afin de respecter les obligations de diligence prévues aux art. 3 à 6 LBA.\n\n2. Champ d'application\nElle s'applique à tous les conseillers à la clientèle et aux collaborateurs du service Ouvertures de compte à Zurich, Genève et Lugano.\n\n3. Vérification de l'identité du cocontractant\nAvant toute ouverture, le conseiller vérifie l'identité du cocontractant (art. 3 LBA). Pour une personne physique : passeport ou carte d'identité en cours de validité, dont une copie est datée et signée par le conseiller. Pour une personne morale : extrait du registre du commerce datant de 12 mois au plus et identification des personnes qui signent pour elle.\n\n4. Ayant droit économique\nLe conseiller identifie l'ayant droit économique des valeurs patrimoniales (art. 4 LBA) au moyen du formulaire interne signé par le cocontractant. Pour les sociétés opérationnelles, les détenteurs de contrôle qui possèdent 25 % ou plus des voix ou du capital sont enregistrés.\n\n5. Profil du client et catégories de risque\nLe profil indique l'origine de la fortune, l'activité professionnelle, le but de la relation et le volume attendu. Chaque relation est classée en risque normal, accru ou élevé. Sont notamment à risque élevé : les personnes politiquement exposées (PEP), les avoirs supérieurs à CHF 5 millions provenant d'un pays à risque et les structures complexes sans justification économique.\n\n6. Diligence accrue\nPour les relations à risque accru ou élevé, des clarifications complémentaires sont exigées (art. 6 LBA) : pièces justifiant l'origine de la fortune, recherches dans des sources publiques et note de plausibilité rédigée par le conseiller. Pour les PEP, la directive W-07 s'applique en complément.\n\n7. Approbation\nLes relations à risque normal sont approuvées par le chef d'équipe. Les relations à risque élevé sont approuvées par un membre de la Direction, après préavis écrit de Compliance. Aucun avoir n'est accepté avant cette approbation.\n\n8. Revue périodique\nLes relations à risque élevé sont revues tous les 2 ans, les relations à risque accru tous les 3 ans et les autres tous les 7 ans. L'identification est renouvelée en cas de doute (art. 5 LBA).\n\n9. Documentation\nLe dossier d'ouverture est complet au plus tard 30 jours après l'ouverture ; à défaut, le compte est bloqué. Les documents sont conservés 10 ans après la fin de la relation.\n\n10. Entrée en vigueur\nLa présente version remplace la version 1.0 du 1er juin 2020."
+}

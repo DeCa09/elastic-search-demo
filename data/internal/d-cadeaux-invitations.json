@@ -1,0 +1,16 @@
+{
+  "id": "d-cadeaux-invitations",
+  "title": "Directive D-05 : Cadeaux et invitations",
+  "language": "fr",
+  "doc_type": "policy",
+  "doc_number": "D-05",
+  "version": "2.0",
+  "department": "Compliance",
+  "valid_from": "2024-01-01",
+  "valid_to": null,
+  "is_current": true,
+  "supersedes": null,
+  "allowed_groups": ["all_staff"],
+  "source": "internal",
+  "body": "[Document de démonstration fictif]\nBanque Privée Albisgrat SA – Directive D-05, version 2.0, en vigueur dès le 1er janvier 2024\n\n1. But\nLa présente directive fixe les règles applicables aux cadeaux et aux invitations reçus ou offerts dans le cadre de l'activité professionnelle. Elle vise à prévenir la corruption et toute apparence de dépendance à l'égard de tiers.\n\n2. Champ d'application\nElle s'applique à tous les collaborateurs, aux membres de la Direction générale et aux membres du Conseil d'administration. Les avantages accordés à un proche du collaborateur sont traités comme s'ils lui étaient destinés.\n\n3. Principe\nUn cadeau ou une invitation ne peut être accepté ou offert que s'il est conforme aux usages, de faible valeur et sans lien avec une décision d'affaires en cours.\n\n4. Limites de valeur\nUn cadeau d'une valeur allant jusqu'à CHF 200 par donateur et par année civile peut être accepté sans autorisation. Une invitation à un repas ou à une manifestation est admise jusqu'à CHF 300 par personne et par événement, pour autant que l'hôte y participe. Les mêmes limites valent pour les cadeaux et invitations offerts par la banque.\n\n5. Autorisation\nAu-delà de ces limites, l'accord écrit du supérieur hiérarchique et de Compliance est requis avant l'acceptation. Si un refus immédiat serait impoli, le cadeau est accepté au nom de la banque et remis à Compliance dans les 5 jours ouvrables ; il est ensuite restitué ou donné à une œuvre caritative.\n\n6. Registre\nTout cadeau ou toute invitation d'une valeur supérieure à CHF 100, accepté, offert ou refusé, est inscrit au registre électronique des cadeaux dans les 10 jours ouvrables. L'inscription mentionne la date, le donateur, le bénéficiaire, la valeur estimée et le motif.\n\n7. Cas interdits\nSont interdits, quelle que soit leur valeur :\n- l'argent liquide, les bons d'achat, les cartes-cadeaux et les titres ;\n- les avantages offerts à un agent public ou reçus de lui ;\n- les cadeaux d'un fournisseur pendant un appel d'offres ou dans les 3 mois qui le précèdent ;\n- les legs et donations de clients en faveur d'un collaborateur ;\n- les voyages et hébergements payés par un tiers ;\n- tout avantage sollicité par le collaborateur.\n\n8. Manifestations de la banque\nLes invitations de clients à des événements organisés par la banque sont approuvées par le chef de région. Le coût par invité ne dépasse pas CHF 500 sans l'accord d'un membre de la Direction générale.\n\n9. Contrôle\nCompliance examine le registre chaque semestre et rapporte à la Direction générale. Les infractions peuvent entraîner des mesures disciplinaires."
+}

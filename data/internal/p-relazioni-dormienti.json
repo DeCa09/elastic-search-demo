@@ -1,0 +1,16 @@
+{
+  "id": "p-relazioni-dormienti",
+  "title": "Procedura P-17: Averi senza contatto e non rivendicati",
+  "language": "it",
+  "doc_type": "procedure",
+  "doc_number": "P-17",
+  "version": "1.0",
+  "department": "Operations",
+  "valid_from": "2022-11-01",
+  "valid_to": null,
+  "is_current": true,
+  "supersedes": null,
+  "allowed_groups": ["all_staff"],
+  "source": "internal",
+  "body": "[Documento dimostrativo fittizio]\nBanca Privata Albisgrat SA – Procedura P-17, versione 1.0, in vigore dal 1° novembre 2022\n\n1. Scopo\nLa presente procedura descrive le misure da adottare quando la banca perde il contatto con un cliente, in modo da tutelare i diritti del cliente e dei suoi eredi e da rispettare le disposizioni sugli averi non rivendicati (art. 37l LBCR).\n\n2. Campo d'applicazione\nSi applica ai consulenti alla clientela e al servizio centrale Averi senza contatto, annesso al dipartimento Operations.\n\n3. Prevenzione\nAll'apertura della relazione il consulente informa il cliente sul rischio di perdita del contatto e gli consiglia di designare una persona di fiducia. Ogni cambiamento di indirizzo va registrato entro 5 giorni lavorativi.\n\n4. Constatazione dell'assenza di contatto\nUna relazione è considerata senza contatto quando la corrispondenza ritorna alla banca come non recapitabile oppure, per i clienti con posta trattenuta o solo con accesso elettronico, quando da 3 anni non vi è alcun contatto documentato con il cliente o con un suo procuratore. Il consulente segnala il caso al servizio centrale entro 10 giorni lavorativi.\n\n5. Misure di ricerca\nIl consulente tenta di ristabilire il contatto con mezzi proporzionati all'importo degli averi: telefono, posta elettronica, elenchi pubblici, controllo abitanti, persona di fiducia. Per averi superiori a CHF 10'000 può essere incaricato un servizio di ricerca esterno, i cui costi sono addebitati al conto. Le ricerche non devono rivelare a terzi l'esistenza della relazione bancaria. Ogni tentativo è annotato nel dossier.\n\n6. Marcatura e gestione\nSe le ricerche restano senza esito per 6 mesi, il servizio centrale contrassegna la relazione nel sistema. Gli averi continuano a essere gestiti nell'interesse del cliente: i conti restano remunerati alle condizioni abituali, i depositi sono amministrati con prudenza, il contenuto delle cassette di sicurezza può essere custodito centralmente. Qualsiasi movimento su una relazione contrassegnata richiede l'approvazione del servizio centrale.\n\n7. Averi non rivendicati\nDopo 10 anni dall'ultimo contatto gli averi sono considerati non rivendicati e la relazione è annunciata, entro 30 giorni, alla banca dati centrale del settore.\n\n8. Pubblicazione e liquidazione\nTrascorsi 50 anni dalla qualifica di averi non rivendicati, ossia 60 anni dall'ultimo contatto, la banca pubblica la relazione sulla piattaforma prevista. Se nessun avente diritto si annuncia entro 1 anno, gli averi sono liquidati e versati alla Confederazione. Gli averi fino a CHF 500 sono liquidati senza pubblicazione. La decisione spetta alla Direzione generale.\n\n9. Ripresa del contatto\nSe il cliente o un erede si annuncia, il servizio centrale ne verifica la legittimazione prima di qualsiasi informazione.\n\n10. Conservazione\nI dossier sono conservati fino alla liquidazione e per i 10 anni successivi."
+}

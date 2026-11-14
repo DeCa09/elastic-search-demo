@@ -1,0 +1,16 @@
+{
+  "id": "p-monitoraggio-transazioni",
+  "title": "Procedura P-09: Monitoraggio delle transazioni e comunicazione di sospetto",
+  "language": "it",
+  "doc_type": "procedure",
+  "doc_number": "P-09",
+  "version": "2.0",
+  "department": "Compliance",
+  "valid_from": "2024-02-01",
+  "valid_to": null,
+  "is_current": true,
+  "supersedes": null,
+  "allowed_groups": ["all_staff"],
+  "source": "internal",
+  "body": "[Documento dimostrativo fittizio]\nBanca Privata Albisgrat SA – Procedura P-09, versione 2.0, in vigore dal 1° febbraio 2024\n\n1. Scopo\nLa presente procedura stabilisce come la banca sorveglia le transazioni della clientela, come vengono trattati gli avvisi e chi decide una comunicazione di sospetto.\n\n2. Campo d'applicazione\nSi applica a tutti i consulenti alla clientela, al traffico dei pagamenti e al servizio Compliance delle sedi di Zurigo, Ginevra e Lugano.\n\n3. Soglie di allerta\nIl sistema di sorveglianza genera un avviso nei casi seguenti:\n- versamenti o prelievi in contanti a partire da CHF 25'000, anche se frazionati su 30 giorni;\n- bonifici in entrata o in uscita a partire da CHF 250'000 per le relazioni a rischio normale e da CHF 100'000 per le relazioni a rischio elevato;\n- pagamenti da o verso Paesi figuranti nella lista interna dei Paesi a rischio, senza soglia;\n- movimenti che superano del 50 % il volume annuo indicato nel profilo del cliente.\n\n4. Trattamento degli avvisi\nL'avviso è assegnato al consulente responsabile, che lo tratta entro 10 giorni lavorativi. Trascorso il termine, l'avviso passa automaticamente al superiore; dopo 20 giorni lavorativi è segnalato a Compliance.\n\n5. Obbligo di chiarimento\nSe la transazione appare inusuale, il consulente chiarisce il retroscena economico e lo scopo (art. 6 LRD). Chiede al cliente i giustificativi necessari, per esempio contratti o fatture, e annota il risultato nel sistema. Una spiegazione verbale senza documenti non basta per importi superiori a CHF 100'000.\n\n6. Segnalazione interna\nSe i dubbi non possono essere dissipati, il consulente trasmette il caso a Compliance entro 2 giorni lavorativi tramite il formulario interno. Non è autorizzato a contattare direttamente le autorità.\n\n7. Decisione e comunicazione a MROS\nLa decisione di comunicare spetta esclusivamente al Responsabile Compliance o, in sua assenza, al suo sostituto. In presenza di un sospetto fondato la comunicazione a MROS è effettuata senza indugio (art. 9 LRD). La Direzione generale è informata, ma non può opporsi alla comunicazione.\n\n8. Divieto d'informazione\nIl cliente e i terzi non devono essere informati né dei chiarimenti rafforzati né della comunicazione (art. 10a LRD). Le violazioni sono segnalate alle risorse umane.\n\n9. Documentazione\nAvvisi, chiarimenti e decisioni, comprese le decisioni di non comunicare, sono documentati e conservati per 10 anni (art. 7 LRD).\n\n10. Controllo\nCompliance verifica ogni trimestre un campione di almeno 40 avvisi chiusi e riferisce i risultati alla Direzione generale."
+}

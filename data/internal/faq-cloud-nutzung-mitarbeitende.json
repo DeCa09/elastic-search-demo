@@ -1,0 +1,16 @@
+{
+  "id": "faq-cloud-nutzung-mitarbeitende",
+  "title": "FAQ: Darf ich Cloud-Dienste für meine Arbeit nutzen?",
+  "language": "de",
+  "doc_type": "faq",
+  "doc_number": "FAQ-04",
+  "version": "1.0",
+  "department": "IT Security",
+  "valid_from": "2025-09-01",
+  "valid_to": null,
+  "is_current": true,
+  "supersedes": null,
+  "allowed_groups": ["all_staff"],
+  "source": "internal",
+  "body": "[Fiktives Demodokument]\nPrivatbank Albisgrat AG – FAQ für Mitarbeitende, Stand 1. September 2025\n\n1. Worum geht es?\nImmer mehr Hilfsmittel laufen im Internet: Dateiablagen, Übersetzer, Notiz-Apps, KI-Assistenten. Diese FAQ erklärt in Kürze, was im Arbeitsalltag erlaubt ist. Massgebend bleibt die Weisung W-12.\n\n2. Darf ich Dateien in meinem privaten Cloud-Speicher ablegen, um zu Hause weiterzuarbeiten?\nNein. Private Cloud-Speicher, private E-Mail-Konten und private Messenger sind für Unterlagen der Bank verboten. Für Kundendaten gilt das ausnahmslos. Nutzen Sie den Fernzugriff der Bank.\n\n3. Darf ich einen öffentlichen KI-Dienst nutzen, um ein Kundenschreiben zu formulieren oder zusammenzufassen?\nNein, sobald Kundendaten im Spiel sind. In öffentliche KI-Werkzeuge dürfen weder Namen, Kontonummern, Depotauszüge noch andere Angaben eingegeben werden, die auf einen Kunden schliessen lassen. Auch ein scheinbar anonymisierter Text ist heikel, wenn der Kunde aus dem Zusammenhang erkennbar bleibt.\n\n4. Und wenn der Text keine Kundendaten enthält?\nÖffentlich zugängliche Informationen, zum Beispiel einen Zeitungsartikel, dürfen Sie in den von der IT freigegebenen Werkzeugen bearbeiten. Die Liste finden Sie im Intranet unter «Freigegebene Anwendungen». Interne Dokumente der Bank gehören nicht in öffentliche Dienste.\n\n5. Darf ich einen Online-Übersetzer oder einen PDF-Umwandler im Internet verwenden?\nNur für öffentliche Inhalte. Für alles andere steht der interne Übersetzungsdienst zur Verfügung.\n\n6. Ein Kunde möchte mir Unterlagen über einen Freigabelink seines Cloud-Speichers schicken. Darf ich den Link öffnen?\nNein. Bitten Sie den Kunden, die Unterlagen über das E-Banking-Postfach oder den gesicherten Datentransfer der Bank einzureichen.\n\n7. Mein Team möchte eine neue Cloud-Anwendung einführen. Was muss ich tun?\nDas ist ein Projekt und fällt unter die Weisung W-12. Vor jeder Vertragsunterzeichnung braucht es eine Risikoanalyse und die Genehmigung der zuständigen Stellen. Wenden Sie sich frühzeitig, mindestens 30 Tage vor dem geplanten Start, an den CISO. Kostenlose Testkonten sind ohne Freigabe ebenfalls nicht erlaubt.\n\n8. Ich habe versehentlich Kundendaten in einen Cloud-Dienst hochgeladen. Was nun?\nMelden Sie es sofort, spätestens innert 24 Stunden, dem CISO und dem Datenschutzberater. Löschen Sie nichts selbst, damit der Vorfall abgeklärt werden kann. Wer rasch meldet, handelt richtig.\n\n9. An wen kann ich mich bei Fragen wenden?\nAn den IT-Helpdesk oder an das Team IT Security. Im Zweifel gilt: zuerst fragen, dann hochladen."
+}

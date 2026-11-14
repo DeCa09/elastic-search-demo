@@ -1,0 +1,16 @@
+{
+  "id": "w18-aufbewahrung-v2",
+  "title": "Weisung W-18: Aufbewahrung und Löschung von Unterlagen",
+  "language": "de",
+  "doc_type": "policy",
+  "doc_number": "W-18",
+  "version": "2.0",
+  "department": "Legal",
+  "valid_from": "2024-09-01",
+  "valid_to": null,
+  "is_current": true,
+  "supersedes": "w18-aufbewahrung-v1",
+  "allowed_groups": ["all_staff"],
+  "source": "internal",
+  "body": "[Fiktives Demodokument]\nPrivatbank Albisgrat AG – Weisung W-18, Version 2.0, gültig ab 1. September 2024\n\n1. Zweck\nDiese Weisung legt fest, wie lange die Bank Unterlagen aufbewahrt und wie sie diese nach Ablauf der Frist löscht. Sie verbindet die gesetzlichen Aufbewahrungspflichten mit dem Grundsatz, Personendaten nicht länger als nötig zu bearbeiten (Art. 6 DSG).\n\n2. Geltungsbereich\nDie Weisung gilt für alle Mitarbeitenden und für Unterlagen in jeder Form: Papier, elektronische Dokumente, E-Mails, Gesprächsaufzeichnungen und Daten in Fachanwendungen.\n\n3. Aufbewahrungsfristen\nEs gelten folgende Fristen:\n- Kundendossiers, Identifikationsdokumente und Abklärungen: 10 Jahre nach Beendigung der Geschäftsbeziehung (Art. 7 GwG);\n- Transaktionsbelege: 10 Jahre nach Abschluss der Transaktion, mindestens jedoch bis 10 Jahre nach Beendigung der Geschäftsbeziehung;\n- Geschäftsbücher und Buchungsbelege: 10 Jahre ab Ende des Geschäftsjahres;\n- aufgezeichnete Telefongespräche des Handels: 2 Jahre;\n- Bewerbungsunterlagen nicht berücksichtigter Personen: 6 Monate;\n- Videoaufnahmen aus den Räumlichkeiten: 90 Tage.\n\n4. Verantwortung\nJeder Dateneigner ist für die Einhaltung der Fristen in seinem Bereich zuständig. Das Archiv in Zürich führt das zentrale Fristenverzeichnis. Unterlagen dürfen nicht in persönlichen Ablagen aufbewahrt werden.\n\n5. Löschprozess\nDas Archiv erstellt jeweils im Januar eine Liste der Unterlagen, deren Frist im Vorjahr abgelaufen ist. Der Dateneigner prüft die Liste innert 30 Tagen. Legal gibt die Löschung schriftlich frei. Die Löschung erfolgt bis spätestens 30. Juni: Papier wird durch den zertifizierten Vernichtungsdienst geschreddert, elektronische Daten werden unwiderruflich gelöscht. Über jede Löschung wird ein Protokoll erstellt, das 10 Jahre aufbewahrt wird.\n\n6. Aufbewahrungssperre (Legal Hold)\nBei hängigen oder absehbaren Gerichts-, Straf- oder Aufsichtsverfahren ordnet der Leiter Legal eine Aufbewahrungssperre an. Die betroffenen Unterlagen dürfen bis zur schriftlichen Aufhebung der Sperre weder gelöscht noch verändert werden, auch wenn die ordentliche Frist abgelaufen ist. Mitarbeitende, die von einem Verfahren erfahren, melden dies innert 2 Arbeitstagen an Legal.\n\n7. Vorzeitige Löschung\nVerlangt eine Person die Löschung ihrer Daten, prüft der Datenschutzberater das Begehren. Während laufender gesetzlicher Fristen wird nicht gelöscht; der Zugriff wird jedoch auf das Archiv beschränkt.\n\n8. Kontrolle\nDie Interne Revision prüft die Einhaltung alle 2 Jahre.\n\n9. Inkrafttreten\nDiese Weisung tritt am 1. September 2024 in Kraft und ersetzt die Version 1.0 vom 1. Januar 2019."
+}
