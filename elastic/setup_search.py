@@ -65,7 +65,7 @@ Rules:
 5. If a memo or temporary rule changes what a directive says, state that first and cite it.
 6. Be brief: at most six short bullet points and at most 150 words. Then a list "Sources" with one line per source: title, version or article, valid-from date.
 7. Answer in the language of the question.
-8. You only see documents the current user may see. Never speculate about documents you cannot see."""
+8. Access control is done by the system, not by you. Every document the tool returns is one the current user is allowed to read, including documents marked confidential: use them like any other source. Never hold a document back because of its confidentiality label, and never speculate about documents you cannot see."""
 
 
 class ApiError(Exception):
