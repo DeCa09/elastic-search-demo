@@ -312,8 +312,10 @@ def role_body():
                          "query": json.dumps(dls)}],
         },
         "kibana": [{"spaces": ["default"], "base": [],
+                    # enterpriseSearch is the Elasticsearch home page Kibana opens after login.
+                    # Without it a demo user lands on "Application not found".
                     "feature": {"agentBuilder": ["read"], "dev_tools": ["all"],
-                                "discover_v2": ["read"]}}],
+                                "discover_v2": ["read"], "enterpriseSearch": ["read"]}}],
     }
 
 
