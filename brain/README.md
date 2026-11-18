@@ -136,7 +136,7 @@ Not tested:
 - The five-minute flow in the Kibana interface. I used the APIs only, so the click names above are my best reading.
 - `scripts/brain.sh` from your Mac. The same Python ran from my side.
 - Document-level security on this project. This demo uses one login. Permissions are the first demo's subject.
-- How much of the trial's LLM allowance is left. The seven runs here used about 1.1 million tokens, most of them in the three baseline runs.
+- How much of the trial's LLM allowance is left. The seven agent runs here used about 750,000 tokens, 530,000 of them in the three baseline runs. The workflow run is on top of that and was not measured.
 
 ## Honest limits
 
