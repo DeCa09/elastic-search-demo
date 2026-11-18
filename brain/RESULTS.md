@@ -4,6 +4,10 @@ Same questions, same data, same model. One agent reads Knowledge Indicators from
 
 | Question | Agent | Correct | Tool calls | LLM calls | Tokens | Seconds |
 |---|---|---|---|---|---|---|
+| material (de) | Baseline, no context | no (missing OUT-006, OUT-010, OUT-019; wrong OUT-021) | 5 | 10 | 87,557 | 33 |
+| material (de) | With Knowledge Indicators | yes | 2 | 3 | 33,226 | 20 |
+| reportable (en) | Baseline, no context | no (missing INC-2026-001, INC-2026-004, INC-2026-021, INC-2026-031) | 0 | 0 | 0 | 15 |
+| reportable (en) | With Knowledge Indicators | no (missing INC-2026-001, INC-2026-004, INC-2026-021, INC-2026-031) | 0 | 0 | 0 | 15 |
 | location (en) | Baseline, no context | yes | 10 | 27 | 348,407 | 77 |
 | location (en) | With Knowledge Indicators | yes | 3 | 4 | 48,474 | 21 |
 | overdue (de) | Baseline, no context | yes | 2 | 7 | 56,617 | 34 |
@@ -15,11 +19,15 @@ Same questions, same data, same model. One agent reads Knowledge Indicators from
 
 | Agent | Correct | Tool calls | Tokens | Seconds |
 |---|---|---|---|---|
-| Baseline, no context | 3 of 3 | 6.0 | 176,327 | 51 |
-| With Knowledge Indicators | 3 of 3 | 4.3 | 59,722 | 25 |
+| Baseline, no context | 3 of 5 | 4.6 | 123,307 | 40 |
+| With Knowledge Indicators | 4 of 5 | 3.0 | 42,478 | 22 |
 
 ## The questions
 
+- **material**: Welche unserer Auslagerungen gelten als wesentliche Auslagerungen? Liste die IDs auf.  
+  Expected: OUT-001, OUT-002, OUT-003, OUT-004, OUT-006, OUT-007, OUT-008, OUT-010, OUT-011, OUT-016, OUT-019, OUT-024. The bank's own definition: active, client data, and criticality high or cost of CHF 200,000 or more. Criticality alone gives a different list.
+- **reportable**: Which reportable incidents did we have in the third quarter of 2026? List the ids.  
+  Expected: INC-2026-001, INC-2026-004, INC-2026-021, INC-2026-031. The bank's own definition: data breaches of medium or high severity, and all access violations. Phishing and outages do not count.
 - **location**: Which outsourcing arrangements store client data outside Switzerland, and does our directive allow each of them?  
   Expected: OUT-003, OUT-004, OUT-014, OUT-019. Not allowed: OUT-003, OUT-014, OUT-019. Allowed (EU with board approval): OUT-004.
 - **overdue**: Bei welchen aktiven Auslagerungen ist die jährliche Überprüfung überfällig?  

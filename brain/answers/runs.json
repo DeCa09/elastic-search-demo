@@ -149,5 +149,114 @@
   "agent": "albisgrat-brain",
   "label": "With Knowledge Indicators",
   "date": "2026-11-18"
+ },
+ "material|albisgrat-baseline": {
+  "tool_calls": [
+   "platform.core.index_explorer",
+   "platform.core.search",
+   "platform.core.get_index_mapping",
+   "platform.core.generate_esql",
+   "platform.core.execute_esql"
+  ],
+  "answer": "Basierend auf den Daten im Outsourcing-Inventar gelten folgende Auslagerungen als **wesentliche Auslagerungen** (Kritikalität: high):\n\n- **OUT-001** – Core banking backup\n- **OUT-002** – E-mail archiving\n- **OUT-003** – CRM hosting\n- **OUT-004** – Client reporting portal\n- **OUT-007** – Card payment processing\n- **OUT-008** – Video identification\n- **OUT-011** – Sanctions screening service\n- **OUT-016** – Secure e-mail gateway\n- **OUT-021** – Client onboarding app\n- **OUT-024** – Transaction monitoring engine\n\nInsgesamt haben wir **10 wesentliche Auslagerungen**.",
+  "llm_calls": 10,
+  "input_tokens": 86221,
+  "output_tokens": 1336,
+  "seconds": 33,
+  "found": [
+   "OUT-001",
+   "OUT-002",
+   "OUT-003",
+   "OUT-004",
+   "OUT-007",
+   "OUT-008",
+   "OUT-011",
+   "OUT-016",
+   "OUT-021",
+   "OUT-024"
+  ],
+  "missing": [
+   "OUT-006",
+   "OUT-010",
+   "OUT-019"
+  ],
+  "extra": [
+   "OUT-021"
+  ],
+  "correct": false,
+  "agent": "albisgrat-baseline",
+  "label": "Baseline, no context",
+  "date": "2026-11-18"
+ },
+ "material|albisgrat-brain": {
+  "tool_calls": [
+   "albisgrat.brain.query_ki",
+   "platform.core.execute_esql"
+  ],
+  "answer": "Folgende Auslagerungen gelten als **wesentliche Auslagerungen**:\n\n• **OUT-001** – Core banking backup (hohe Kritikalität)\n• **OUT-002** – E-mail archiving (hohe Kritikalität)\n• **OUT-003** – CRM hosting (hohe Kritikalität)\n• **OUT-004** – Client reporting portal (hohe Kritikalität)\n• **OUT-006** – Statement printing (CHF 310'000)\n• **OUT-007** – Card payment processing (hohe Kritikalität)\n• **OUT-008** – Video identification (hohe Kritikalität)\n• **OUT-010** – Document scanning (CHF 240'000)\n• **OUT-011** – Sanctions screening service (hohe Kritikalität)\n• **OUT-016** – Secure e-mail gateway (hohe Kritikalität)\n• **OUT-019** – Data warehouse test environment (CHF 310'000)\n• **OUT-024** – Transaction monitoring engine (hohe Kritikalität)\n\n**Basierend auf:** Index albisgrat-outsourcing-inventory; Knowledge Indicator \"Material outsourcing (wesentliche Auslagerung)\" – Definition gemäss Compliance: aktiv, enthält Kundendaten, und entweder hohe Kritikalität oder Jahreskosten ≥ CHF 200'000.",
+  "llm_calls": 3,
+  "input_tokens": 32509,
+  "output_tokens": 717,
+  "seconds": 20,
+  "found": [
+   "OUT-001",
+   "OUT-002",
+   "OUT-003",
+   "OUT-004",
+   "OUT-006",
+   "OUT-007",
+   "OUT-008",
+   "OUT-010",
+   "OUT-011",
+   "OUT-016",
+   "OUT-019",
+   "OUT-024"
+  ],
+  "missing": [],
+  "extra": [],
+  "correct": true,
+  "agent": "albisgrat-brain",
+  "label": "With Knowledge Indicators",
+  "date": "2026-11-18"
+ },
+ "reportable|albisgrat-baseline": {
+  "tool_calls": [],
+  "answer": "",
+  "llm_calls": 0,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "seconds": 15,
+  "found": [],
+  "missing": [
+   "INC-2026-001",
+   "INC-2026-004",
+   "INC-2026-021",
+   "INC-2026-031"
+  ],
+  "extra": [],
+  "correct": false,
+  "agent": "albisgrat-baseline",
+  "label": "Baseline, no context",
+  "date": "2026-11-18"
+ },
+ "reportable|albisgrat-brain": {
+  "tool_calls": [],
+  "answer": "",
+  "llm_calls": 0,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "seconds": 15,
+  "found": [],
+  "missing": [
+   "INC-2026-001",
+   "INC-2026-004",
+   "INC-2026-021",
+   "INC-2026-031"
+  ],
+  "extra": [],
+  "correct": false,
+  "agent": "albisgrat-brain",
+  "label": "With Knowledge Indicators",
+  "date": "2026-11-18"
  }
 }

@@ -1,5 +1,7 @@
 # Second demo: a company brain on Elasticsearch
 
+> **This folder is the first version.** The full kit for this demo, with its own runbook, deck, fallback plan and a five-question measurement, is in the separate repository `DeCa09/elastic-brain-demo`. Use that one. The numbers below are from the first three questions only.
+
 The first demo answers questions from documents. This one shows an agent that knows **where the bank's knowledge lives and what its terms mean** before it searches. It uses Elastic's AI Index and Knowledge Indicators, as described in the Elasticsearch Labs article "Building context in Elasticsearch: how AI Indices power smarter agents using fewer tokens" (11 August 2026).
 
 **In one sentence:** the same bank, three data sources instead of one, and a layer of pre-computed context that lets the agent answer with a third of the tokens in half the time.

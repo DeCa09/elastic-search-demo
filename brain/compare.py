@@ -37,7 +37,24 @@ def questions():
     abroad = [r for r in inv if r["contains_client_data"] and r["data_location"] != "CH"]
     overdue = [r for r in inv if r["status"] == "active" and r["last_review"] < year_ago]
     late = [r for r in inc if r["category"] == "data_breach" and not r["reported_within_24h"]]
+    material = [r for r in inv if r["status"] == "active" and r["contains_client_data"]
+                and (r["criticality"] == "high" or r["annual_cost_chf"] >= 200000)]
+    reportable = [r for r in inc if "2026-07-01" <= r["date"] <= "2026-09-30" and (
+        (r["category"] == "data_breach" and r["severity"] in ("medium", "high"))
+        or r["category"] == "access_violation")]
     return [
+        {"id": "material", "language": "de", "needs_definition": True,
+         "question": "Welche unserer Auslagerungen gelten als wesentliche Auslagerungen? "
+                     "Liste die IDs auf.",
+         "expected": sorted(r["arrangement_id"] for r in material), "pattern": r"OUT-\d{3}",
+         "note": "The bank's own definition: active, client data, and criticality high or cost of "
+                 "CHF 200,000 or more. Criticality alone gives a different list."},
+        {"id": "reportable", "language": "en", "needs_definition": True,
+         "question": "Which reportable incidents did we have in the third quarter of 2026? "
+                     "List the ids.",
+         "expected": sorted(r["incident_id"] for r in reportable), "pattern": r"INC-2026-\d{3}",
+         "note": "The bank's own definition: data breaches of medium or high severity, and all "
+                 "access violations. Phishing and outages do not count."},
         {"id": "location", "language": "en",
          "question": "Which outsourcing arrangements store client data outside Switzerland, and does "
                      "our directive allow each of them?",
