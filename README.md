@@ -6,6 +6,11 @@ This kit is independent of the observability demo in `DeCa09/elastic-panel-demo`
 
 **Story:** a relationship manager in Geneva asks in French about a rule that exists only in a German directive. Keyword search misses it. Hybrid search finds it. The AI agent answers in French with citations. A compliance officer asking the same question gets one more source: a confidential memo the relationship manager never sees.
 
+## Two demos in this repository
+
+1. **The compliance assistant** (everything below): multilingual hybrid search, citations and permissions, on an Elastic Cloud Hosted deployment. This is the interview demo.
+2. **The company brain** (`brain/README.md`): three data sources and an AI Index of Knowledge Indicators, on a Serverless project. A five-minute extension that shows where the platform goes next. Same answers with a third of the tokens in half the time, measured on three questions.
+
 ## Read in this order
 
 | File | What it is |

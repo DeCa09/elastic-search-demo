@@ -1,0 +1,137 @@
+version: '1'
+name: albisgrat-index-profile-ki
+description: Profile each source index with an LLM and store the profile as a Knowledge Indicator in the AI Index. Adapted from the Elasticsearch Labs article "Building context in Elasticsearch" (11 August 2026).
+enabled: true
+tags:
+  - context-management
+  - albisgrat
+
+triggers:
+  - type: manual
+
+consts:
+  indices:
+    - albisgrat-knowledge
+    - albisgrat-outsourcing-inventory
+    - albisgrat-incidents
+
+steps:
+  - name: loop_indices
+    type: foreach
+    foreach: '{{ consts.indices | json }}'
+    iteration-on-failure:
+      continue: true
+    steps:
+      - name: get_mapping
+        type: elasticsearch.request
+        with:
+          method: GET
+          path: '/{{ foreach.item }}/_mapping'
+
+      - name: sample_docs
+        type: elasticsearch.request
+        with:
+          method: POST
+          path: '/{{ foreach.item }}/_search'
+          body:
+            size: 3
+            _source:
+              excludes:
+                - body_semantic
+                - body_de
+                - body_fr
+                - body_it
+                - body_en
+            query:
+              match_all: {}
+
+      - name: profile_index
+        type: ai.agent
+        timeout: 180s
+        with:
+          message: >
+            You are a data steward building an INDEX PROFILE for a bank's data catalog.
+            Downstream, an AI agent uses these profiles to decide WHICH Elasticsearch
+            index to query for a question. This is an index-selection aid, not a place
+            to answer the question itself.
+
+            You are given the index name, its mapping with human-written descriptions
+            in `_meta.description` and each field's `meta.description`, and a few sample
+            documents. Rules:
+            - Ground everything in the mapping and samples. Never invent fields or values.
+            - Make it obvious which questions this index can answer and which it cannot.
+            - Prefer concrete field names and real example values.
+            - Name shared keys that link this index to other indices.
+            - A field of type semantic_text is searched with MATCH(field, "text").
+
+            Index name: {{ foreach.item }}
+
+            Mapping (JSON):
+            {{ steps.get_mapping.output | json }}
+
+            Sample documents (JSON):
+            {{ steps.sample_docs.output.hits.hits | map: '_source' | json }}
+          schema:
+            type: object
+            properties:
+              display_name:
+                type: string
+                description: A concise human-readable name for the index (8 words at most).
+              purpose:
+                type: string
+                description: 2-4 sentences on what the index stores and its role.
+              answers_questions:
+                type: array
+                items:
+                  type: string
+                description: 3-6 natural-language questions this index can answer.
+              does_not_contain:
+                type: array
+                items:
+                  type: string
+                description: 1-4 things a searcher might wrongly expect here.
+              key_fields:
+                type: array
+                items:
+                  type: string
+                description: 3-10 query-relevant fields as "field_name - what it is".
+              when_to_use:
+                type: string
+                description: One routing rule, 30 words at most.
+              example_esql:
+                type: string
+                description: One runnable ES|QL query against this index.
+            required:
+              - display_name
+              - purpose
+              - answers_questions
+              - key_fields
+              - when_to_use
+
+      - name: sink_index_ki
+        type: elasticsearch.request
+        with:
+          method: PUT
+          path: '/ai-index-idx-albisgrat/_doc/profile-{{ foreach.item | url_encode }}'
+          body:
+            '@timestamp': '{{ "now" | date: "%Y-%m-%dT%H:%M:%S.%LZ" }}'
+            type: index_metadata_entry
+            title: '{{ steps.profile_index.output.structured_output.display_name | default: foreach.item }}'
+            tags:
+              - index-profile
+              - generated-by-workflow
+              - '{{ foreach.item }}'
+            attributes:
+              source_index: '{{ foreach.item }}'
+              when_to_use: '{{ steps.profile_index.output.structured_output.when_to_use }}'
+              generated_by: workflow albisgrat-index-profile-ki
+            content: >
+              Backing index: {{ foreach.item }}.
+              {{ steps.profile_index.output.structured_output.purpose }}
+              Questions this index can answer: {{ steps.profile_index.output.structured_output.answers_questions | join: " | " }}
+              When to use: {{ steps.profile_index.output.structured_output.when_to_use }}
+              Key fields: {{ steps.profile_index.output.structured_output.key_fields | join: "; " }}.
+              Example query: {{ steps.profile_index.output.structured_output.example_esql }}
+            description: >
+              Index profile: {{ steps.profile_index.output.structured_output.display_name }}.
+              Does NOT contain: {{ steps.profile_index.output.structured_output.does_not_contain | join: "; " }}.
